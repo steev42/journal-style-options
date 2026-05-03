@@ -1,0 +1,330 @@
+//   =============== //
+//   SIZE AND LAYOUT //
+//   =============== //
+
+div.journal-sheet@{module-class}.window-app {
+    // ====    Journal     ==== //
+    &.journal-entry {
+        min-width: 60rem;
+        // ====    Journal Header    ==== //
+        .journal-header {
+            background-image: url(assets/header-back.webp);
+            background-position: top center;
+            text-align: center;
+            height: 60px;
+            width: 100%;
+            margin: auto;
+            z-index: 2;
+            input.title {
+                background: transparent;
+                background-image: url(assets/header-input.webp);
+                background-size: cover;
+                background-position: bottom;
+                margin: 0 4.5rem;
+                padding: 0.4rem 1rem 0.6rem 1rem;
+                height: auto;
+                width: auto;
+                width: -moz-available;
+                width: -webkit-fill-available;
+                border: none;
+                font-family: 'Taroca';
+                font-size: 1.8rem;
+                color: @km-darkgreen;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    // ====    Page    ==== //
+    &.journal-entry-page {
+        .journal-page-content.editor-content {
+            // Make images less obnoxious to scroll past
+            figure.head img {
+                max-width: 700px;
+            }
+            figure img {
+                max-width: 300px;
+            }
+            aside img {
+                max-width: 128px;
+            }
+        }
+    }
+    // ====    Page & Journal    ==== //
+    &.journal-entry-page, section.journal-entry-content {
+        min-width: 44rem;
+        border: unset;
+        z-index: 0;
+        // ====    Size & Layout    ==== //
+        .journal-entry-pages {
+            margin: unset;   // Removes margin from bottom of page and right of scrollbar
+            article.journal-entry-page.text { scroll-margin-top: 2.5rem; } // Fixes headers in the multipage view
+            div.scrollable {
+                padding: 2rem 0 0.5rem 0;
+                scrollbar-gutter: stable both-edges;
+                div.edit-container {
+                    z-index: 5;
+                }
+                section.journal-page-content {
+                    padding: 0 1rem; // Restores the balance of page borders. If we actually want to cut off page headers we can restore that by moving this back up to div.scrollable
+                    margin: 0.5rem 0;
+                }
+            }
+        }
+        // ====    Single-page Header    ==== //
+        .journal-header {
+            z-index: 1;
+            input {
+                font-family: @h1-font-family;
+                color: @km-darkgreen;
+                text-overflow: ellipsis;
+                border: none;
+            }
+            aside {
+                div.heading-level {
+                    font-family: @h2-font-family;
+                }
+                div.show-title {
+                    font-family: @p-font-family;
+                }
+            }
+        }
+        // ====    Page Titles    ==== //
+        .journal-page-header {
+            position: relative;
+            margin: auto;
+            h1, h2, h3 {
+                width: 100%;
+                margin: unset;
+                clear: both;
+            }
+            h1 {
+                font-family: 'Taroca';
+                color: @km-darkgreen;
+                text-align: center;
+                border: unset;
+                margin: 0.5rem 0 1rem 0;
+                line-height: 2.5rem;
+                font-size: 2rem;
+                &::before {
+                    content: "";
+                    background: url(./assets/border.webp) center / cover repeat-x;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 60%;
+                    opacity: 25%;
+                    filter: drop-shadow(0px 0px 4px @km-darkgreen);
+                }
+                &::after {
+                    content: "";
+                    background: url(./assets/border.webp) center / cover repeat-x;
+                    width: 100%;
+                    position: absolute;
+                    height: 100%;
+                    right: 60%;
+                    opacity: 25%;
+                    filter: drop-shadow(0px 0px 4px @km-darkgreen);
+                }
+            }
+            h2, h3 {
+                margin: 0.5rem 1rem 0.5rem 1rem;
+                width: auto;
+                font-family: "Good OT Cond Bold";
+                text-transform: uppercase;
+                line-height: 1.6rem;
+                font-size: 1.6rem;
+                color: @km-darkgreen;
+                border-bottom: 2px solid @km-darkgreen;
+            }
+            h3 {
+                color: @km-lightgreen;
+                border-bottom: 2px solid @km-lightgreen;
+            }
+        }
+    }
+    // ====    Background    ==== //
+    &.journal-entry-page section.window-content, &.journal-sheet section.journal-entry-content {
+        background-image: url(assets/page-back.webp);
+    }
+    // ====    Table of Contents    ==== //
+    &.journal-entry aside.sidebar.flexcol.directory.journal-sidebar {
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        color: white;
+        border: unset;
+        // ====    Buttons    ==== //
+        div.action-buttons, header.directory-header {
+            z-index: 2;                      // Place them above the images
+            button.next, button.previous, a.action-button, input, button.create {
+                margin: 0.25rem;
+                border: unset;
+                background: rgba(255, 255, 245, 0.75);
+                border-radius: 4px;
+                line-height: 28px;
+                height: 28px;
+                color: black;
+            }
+        }
+        // ====    Directory    ==== //
+        ol.directory-list {
+            padding: 2rem 0 1rem 0;
+            // ====    List Items    ==== //
+            li.directory-item {
+                scroll-margin-top: 2rem;
+                line-height:30px;
+                border: unset;
+                // ====    Page titles    ==== //
+                span.page-title {
+                    text-overflow: ellipsis;
+                    font-size: 0.9rem;
+                }
+                // ====    Page visibility    ==== //
+                span.page-ownership {
+                    width: 24px;
+                    &.observer {
+                        color: #939393
+                    }
+                    &.none {
+                        color: #7070CC
+                    }
+                }
+                // ====    Page subheadings    ==== //
+                ol.headings {
+                    display: none
+                }
+                // ====    Per-level rules    ==== //A
+                &.level1 {
+                    &::before {
+                        content: "";
+                        background: url(assets/divider.webp) no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        top: 0;
+                        width: 100%;
+                        height: 1rem;
+                        margin: 0.25rem 0;
+                    }
+                    span.page-title {
+                        font-family: @h3-font-family;
+                        font-size: 1.1rem;
+                    }
+                }
+                &.level2 span.page-title {
+                    text-indent: 0rem;
+                    font-family: @p-font-family;
+                }
+                &.level3 span.page-title {
+                    text-indent: 0.5rem;
+                    font-family: @p-font-family;
+                }
+            }
+        }
+        // ====    Expanded List    ==== //
+        &:not(.collapsed) {
+            flex-basis: 16rem;
+            // Hide page numbers
+            span.page-number {
+                color: transparent;
+                width: 24px;
+            }
+            // ====    Active Page Pointer    ==== //
+            .active {
+                span.page-number {
+                    background-image: url(assets/toc-pointer.webp);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+            .active + .active {
+                span.page-number {
+                    background-image: unset;
+                }
+            }
+        }
+        &.collapsed {
+            width: 2.75rem
+        }
+    }
+}
+
+//   =============  //
+//   WINDOW NAVBAR  //
+//   =============  //
+
+div.journal-sheet@{module-class}.window-app:not(.minimized) {
+    header.window-header {
+        background-image: url(assets/window-header.webp);
+        background-size: contain;
+        background-repeat: repeat-x;
+        background-position: bottom left;
+        padding-bottom: 2px;
+        line-height: 2rem;
+        z-index: 3;
+        border: unset;
+        filter: drop-shadow(1px 1px 4px rgb(21, 12, 12));
+        h4, a {
+            text-shadow: 1px 2px 3px black;
+        }
+    }
+}
+
+//  =================  //
+//  JOURNAL TRIM ONLY  //
+//  =================  //
+
+div.journal-sheet@{module-class}.window-app.journal-entry {
+    section.window-content {
+        border: unset;
+        border-radius: unset;
+        position: relative;
+        section.journal-entry-content::before {
+            content: "";
+            pointer-events: none;
+            background-image: url(assets/header-left.webp), url(assets/header-right.webp);
+            background-repeat: no-repeat, no-repeat;
+            background-size: 128px, 128px;
+            background-position: top left, top right;
+            z-index: 2;
+            width: auto;
+            width: -moz-available;
+            width: -webkit-fill-available;
+            height: 256px;
+            position: absolute;
+        }
+    }
+    aside.journal-sidebar:not(.collapsed) {
+        background-image: url(assets/toc-header.webp), url(assets/toc-bot.webp);
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
+        background-position: top, bottom;
+    }
+}
+
+
+// Document icons (used for patchnotes)
+@{journalcontent} {
+  .documenticon {
+    &.h3 {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+    &:before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      font-family: "Font Awesome 6 Pro";
+      width: 1.25rem;
+      text-align: center;
+      font-size: medium;
+    }
+    &.scenes:before { content: "\f279"; }
+    &.actors:before { content: "\f007"; }
+    &.items:before { content: "\f0f2"; }
+    &.tables:before { content: "\f00b"; }
+    &.journals:before { content: "\f518"; }
+    &.cards:before { content: "\e3ed"; }
+    &.playlists:before { content: "\f001"; }
+    &.macros:before { content: "\f121"; }
+    &.all:before { content: "\f558"; }
+  }
+}

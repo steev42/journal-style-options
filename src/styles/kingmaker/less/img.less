@@ -1,0 +1,62 @@
+@{journalcontent} {
+
+    // Coloured glows to images
+    figure img {
+        filter: drop-shadow(0px 0px 5px #f0c492);
+    }
+    figure.head img {
+        filter: drop-shadow(0px 0px 5px @km-darkgreen);
+    }
+
+    figure {
+        margin:unset;
+        &.round img {
+            border-radius: 50%
+        }
+        &.balance img {
+            margin:auto;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+        }
+        figcaption {
+            font-size: @p-font-size;
+            font-family: "Roundest Bold";
+        }
+        &.head {
+            margin: 1rem 0;
+            img {
+                border-radius: 10px;
+            }
+        }
+        &.right, &.left {
+            padding: 0;
+        }
+    }
+
+    img {
+        border:unset;
+        &.flip {
+            transform: scaleX(-1);
+        }
+        &.scale150 {
+            min-width: 150%;
+            margin: -25%;
+            -webkit-mask-image: radial-gradient(black 50%, transparent 60%);
+            mask-image: radial-gradient(black 50%, transparent 60%);
+        }
+        &.scale200 {
+            min-width: 200%;
+            margin: -50%;
+            -webkit-mask-image: radial-gradient(black 45%, transparent 50%);
+            mask-image: radial-gradient(black 45%, transparent 50%);
+        }
+    }
+
+    // Currently only used for the Caeora logo in the credits
+    .logo img {
+            filter: drop-shadow(1px 2px 2px black);
+            display: block;
+            max-width: 400px;
+            margin: auto;
+    }
+}

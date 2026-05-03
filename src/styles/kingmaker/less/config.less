@@ -1,0 +1,160 @@
+// SHORTCUTS
+    @module-class: ~".pf2e-km";
+    @documentlinks: ~".with-repost, .content-link, .inline-roll, .inline-check, span[data-visibility]:not([data-visibility=all]), .with-repost>i, .content-link>i";
+    @journalcontent: ~"div.journal-sheet.window-app@{module-class} .journal-page-content";
+    @adventureimporter: ~"div.adventure-importer.window-app@{module-class} .window-content";
+    @blocktypes: ~".encounter, &.treasure, &.skill, &.quest, &.milestone, &.social, &.stats";
+
+// CONFIG
+    @header-color-1: @km-darkgreen;
+    @header-color-2: @km-lightgreen;
+    // Text Values Config
+    // Regular text
+    @p-color: black;
+    @p-font-size: 1rem;
+    @p-font-family: "Good OT", sans-serif;
+    @p-line-height: 1.25rem;
+    // Big headers
+    @h1-font-size: 1.75rem;
+    @h1-font-family: "Taroca", sans-serif;
+    // Medium headers
+    @h2-font-size: 1.3rem;
+    @h2-font-family: "Gin", sans-serif;
+    // Small headers
+    @h3-color:  @km-darkgreen;
+    @h3-font-size: 1.25rem;
+    @h3-font-family: "Good OT Cond Bold", sans-serif;
+    // Links
+    @inline-link-button : @km-darkgreen;
+    @inline-link-button-highlight : @km-lightgreen;
+    @dropcap: "Gloucester Initialen", sans-serif;
+    @calligraphy: "Prince Valiant", sans-serif;
+    @signature: "Meddon", script;
+
+
+// COLOURS
+    @fvtt-orange: #d0550d;
+    // Kingmaker palette
+    @km-darkgreen: #004416; //headers
+    @km-lightgreen: #548433; //subheaders, traits -- #789035 is technically more book accurate but ugly
+    @km-red: #9d4433; //narrative text
+    @km-darkred: #7a0303; // level 1 page headers
+    @km-brown: #d9c4a7; // The brown used for aside boxes
+    @km-darkbeige: #e0d5be; //darker contrast (used for quest boxes)
+    @km-midbeige: #ede3c8; //Close analogue to page background colour
+    @km-lightbeige: #f5efe0;
+    @km-purple: #28005c; //Used for "visibility" sections in the hexploration instructional
+    // KM trait colours
+    @trait-border: #d8c483; //Borders
+    @trait-default: #649364; //Default background
+    @trait-rarity: #662288; //Rarity
+    @trait-alignment: #446699; //Alignment
+    @trait-size: #004416; //Size
+    // PF2E system colours
+    @paizo-blue-light: #7c7bab; //The paizo logo light lilac blue
+    @paizo-blue-dark: #171f69; //The paizo logo dark blue
+    @pf2e-red: #5e0000; //Pathfinder Red
+    @pf2e-gold: #c5832b; //Pathfinder Gold
+    @pf2e-trait-unique: #800080;
+    @pf2e-trait-rare: #0c1466;
+    @pf2e-trait-uncommon: #c45500;
+
+    // Common Colours
+    // Box Colour Schemes
+    @transparency: rgba(0,0,0,0);
+    // Skills are green
+    @skill-head: #004416;
+    @skill-border: #12682d;
+    @skill-aside: #587455;
+    @skill-back: rgba(60, 120, 60, 0.1);
+    // Encounters are red
+    @encounter-head: #892522;
+    @encounter-border: #9b3532;
+    @encounter-aside: #892522;
+    @encounter-back: rgba(130, 80, 80, 0.1);
+    // Treasure is blue
+    @treasure-head: #48438b;
+    @treasure-border: #655fa7;
+    @treasure-aside: #48438b;
+    @treasure-back: rgba(60, 60, 140, 0.1);
+    // Social is also green
+    @social-head: #004416;
+    @social-border: #12682d;
+    @social-aside: #587455;
+    @social-back: rgba(60, 120, 60, 0.025);
+    // Milestones are orange
+    @milestone-head: rgb(181, 68, 42);
+    @milestone-border: #4F4F4F; // Never used
+    @milestone-aside: white; // Never used
+    @milestone-back: rgba(160, 99, 50, 0.1);
+    // Quests are brown
+    @quest-head: #461502;
+    @quest-border: #3b2200;
+    @quest-aside: white; // Never used
+    @quest-back: rgba(160, 120, 50, 0.2);
+    // Stats should look minimalistic
+    @stats-head: #004416;
+    @stats-border: #87af94;
+    @stats-aside: #587455;
+    @stats-back:  #ffffff5e;
+    // Secret is purple
+    @secret-head: rgb(68, 18, 57);
+    @secret-border: #4F4F4F; // Never used
+    @secret-aside: white; // Never used
+    @secret-back: rgba(120, 50, 160, 0.1);
+    @secret-revealed-back: rgba(50, 100, 160, 0.1);
+
+// FONTS
+    // Titles
+    @font-face {
+        font-family: "Taroca";                                // h1
+        src: url(fonts/taroca.ttf) format('truetype');        // Rounded and blocky, uppercase
+        }
+        @font-face {
+        font-family: "Gin";                                // h2
+        src: url(fonts/gin.otf) format('opentype');        // Blocky and square, uppercase
+        }
+        @font-face {
+        font-family: "Roundest Bold";                                // h3
+        src: url(fonts/roundest-bold.ttf) format('truetype');        // Rounded, mixed case
+        }
+    // Text
+        // Sans-serif
+        @font-face {
+            font-family: 'Good OT';                                           // Ordinary text
+            src: url(fonts/goodot.otf) format('opentype');
+        }
+        @font-face {
+            font-family: 'Good OT Bold';
+            src: url(fonts/goodot-bold.otf) format('opentype');
+        }
+        @font-face {
+            font-family: 'Good OT Italic';
+            src: url(fonts/goodot-italic.otf) format('opentype');
+        }
+        @font-face {
+            font-family: 'Good OT Bold Italic';
+            src: url(fonts/goodot-bolditalic.otf) format('opentype');
+        }
+        @font-face {
+            font-family: 'Good OT Cond';
+            src: url(fonts/goodot-cond.otf) format('opentype');             // Aside text
+        }
+        @font-face {
+            font-family: 'Good OT Cond Bold';
+            src: url(fonts/goodot-condbold.otf) format('opentype');
+        }
+// Letter Handouts
+@font-face {
+    font-family: 'Gloucester Initialen';
+    src: url(fonts/gloucester-initialen.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Meddon';
+    src: url(fonts/meddon.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Prince Valiant';
+    src: url(fonts/prince-valiant.woff2) format('woff2');
+}
+

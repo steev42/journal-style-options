@@ -1,0 +1,42 @@
+
+/* -------------------------------------------- */
+/*  Adventure Importer                          */
+/* -------------------------------------------- */
+
+.pf2e-km.adventure-importer {
+  // Remove baked-in images, borders, shadows to make the app transparent
+  border: none;
+  box-shadow: none;
+  background: none;
+  // Apply images
+  &:not(.minimized) .window-header {
+    background: url("assets/window-header.webp") repeat-x top center;
+    background-size: contain;
+  }
+  .window-content {
+    background: url("assets/page-back.webp") no-repeat;
+    background-size: cover;
+    // Set header rules
+    h1 {
+      --font-h1: @h1-font-family;
+      color: @header-color-1;
+    }
+    h2 {
+      --font-h2: @h2-font-family;
+      color: @header-color-1;
+    }
+    // Set text rules
+    p, li, label {
+      font-family: @p-font-family;
+      font-size: @p-font-size;
+      text-align: justify;
+      line-height: @p-line-height;
+    }
+    // Override font size for the labels specifically 
+    .import-options, .import-controls {
+      label {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,153 @@
+@hex-text: #EEE;
+@hex-text-gray: rgb(160, 160, 160);
+@hex-default: rgba(200, 200, 255, 0.25);
+@hex-claimed: rgb(255, 0, 0);
+@feature-unknown-back:#b189ff15;
+@feature-unknown-text: #c9aeff;
+
+// ==== HEX TOOLTIP ==== //
+
+#kingmaker-hex-hud {
+  background: rgb(0 0 0 / 80%);
+  color: @hex-text;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  border: 2px solid #000;
+  border-radius: 1rem;
+
+  &.default {
+    box-shadow: 0 0 16px inset @hex-default;
+  }
+  &.claimed {
+    box-shadow: 0 0 16px inset @hex-claimed;
+  }
+  .resources.unknown, p.item.unknown {
+    background: linear-gradient(to right, transparent, @feature-unknown-back 10% , 90%, transparent);
+  }
+  .fa-eye-slash, .title .unknown {
+    color: @feature-unknown-text;
+  }
+
+  .traits {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    font-size: 1.8rem;
+    li {
+      border-left: 0.5rem solid @trait-border;
+      border-right: 0.5rem solid @trait-border;
+      background: @km-darkgreen;
+      color: white;
+      padding: 0.2rem 0.75rem;
+      text-transform: uppercase;
+      font-family: 'Good OT Cond Bold';  
+    }
+  }
+
+  div.group {
+    border-image: linear-gradient(to right, transparent, #999 10%, 90%, transparent) 1 / 2px 0 0 0;
+    &:empty {
+      display: none;
+    }
+    p.item {
+      min-height: 32px;
+      margin: 0;
+      padding: 0.4rem 0;
+      i {
+        padding: 14px 0 0 0;
+        flex: 0 0 5rem;
+        text-align: center;
+      }
+    }
+    p.item:first-child {
+      padding-top: 1rem;
+    }
+    p.item:last-child {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .flex {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    div {
+      flex: 100%
+    }
+    img.terrain {
+      margin: 1rem 0;
+      flex: 0 0 160px;
+      width: 160px;
+      height: 160px;
+      border-radius: 10px;
+    }
+  }
+
+  p.item {
+    border-radius: 50px;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    span {
+      align-self: center;
+    }
+    &.title {
+      font-size: 2.2rem;
+      .key, .value {
+        white-space: nowrap;
+      }
+      i {
+        padding: 2px 0 0 0;
+      }
+    }
+    .key {
+      flex: 1;
+      text-align: left;
+    }
+    .value {
+      text-align: right;
+      width: 100%
+    }
+    .gray {
+      color: @hex-text-gray;
+    }
+    img {
+      height: 4rem;
+      border-radius: 24px;
+    }
+  }
+
+}
+
+// ==== HEX EDITOR ==== //
+
+#kingmaker-hex-edit {
+  legend {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    button {
+      font-size: var(--font-size-12);
+      line-height: 1rem;
+    }
+  }
+
+  form.flexcol {
+    gap: 1rem;
+  }
+
+  div.feature {
+    gap: 0.5rem;
+    > select {
+      flex: 0 0 100px;
+      width: 100px;
+    }
+    > button {
+      font-size: var(--font-size-12);
+      line-height: 1.5rem;
+      flex: 0 0 2rem;
+    }
+  }
+}

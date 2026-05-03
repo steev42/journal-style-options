@@ -1,0 +1,38 @@
+//      compile after edits with:              //
+//      lessc pf2e-km.less ../pf2e-km.css      //
+
+// ============================================== //
+//                  File Imports                  //
+// ============================================== //
+
+// Common
+@import "config.less";
+@import "common.less";
+// Window Aesthetics
+@import "journals.less"; // Journals & Pages
+@import "importer.less"; // Adventure importer
+@import "region.less"; // Hex tooltip & Editor
+@import "structures-browser.less"; // The structure browser application
+// Content
+@import "blocks.less"; // Content blocks
+@import "img.less"; // Images and figures
+@import "narrative-text.less"; // Narrative blocks in the journals & in chat
+
+
+// Hide changelogs compendium
+li.directory-item[data-pack="pf2e-kingmaker.kingmaker-changelog"] {
+    display: none !important; 
+}
+// Modify rendering of thumbnails in strategy maps compendium
+section.strategy-maps {
+    .scene {
+        img {
+            flex: 0 0 80px;
+            height: 80px;
+        }
+        a {
+            font-size: 1rem;
+            text-indent: 0.25rem;
+        }
+    }
+}
