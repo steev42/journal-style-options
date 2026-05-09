@@ -14,5 +14,9 @@
    "verified": "13"
  },
  "esmodules": ["scripts/module.js"],
- "styles": ["styles/pf2e-km.css", "styles/pf2e-av.css"]
+ "styles": [
+    "https://unpkg.com/@phosphor-icons/web/src/regular/style.css",
+    "styles/pf2e-km.css", 
+    "styles/pf2e-av.css"
+  ]
 }

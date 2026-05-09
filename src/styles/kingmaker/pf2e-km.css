@@ -46,6 +46,11 @@
   font-family: 'Prince Valiant';
   src: url(fonts/prince-valiant.woff2) format('woff2');
 }
+.pf2e-km .journal-page-content {
+  color: black;
+  margin: 0 7px;
+  padding: 14px 0;
+}
 .pf2e-km .journal-page-content header {
   margin-top: 12px;
 }
@@ -261,10 +266,10 @@
 .pf2e-km .journal-page-content section.encounter aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.encounter aside > p i.fas {
+.pf2e-km .journal-page-content section.encounter aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.encounter aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.encounter aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -523,12 +528,12 @@
 .pf2e-km .journal-page-content section.encounter aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content aside.encounter > p i.fas,
-.pf2e-km .journal-page-content section.encounter aside > p i.fas {
+.pf2e-km .journal-page-content aside.encounter > p i.ph,
+.pf2e-km .journal-page-content section.encounter aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content aside.encounter > p i.fas.fa-comment-alt,
-.pf2e-km .journal-page-content section.encounter aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content aside.encounter > p i.ph.ph-chat,
+.pf2e-km .journal-page-content section.encounter aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -692,10 +697,10 @@
 .pf2e-km .journal-page-content section.quest aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.quest aside > p i.fas {
+.pf2e-km .journal-page-content section.quest aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.quest aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.quest aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -922,10 +927,10 @@
 .pf2e-km .journal-page-content section.skill aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.skill aside > p i.fas {
+.pf2e-km .journal-page-content section.skill aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.skill aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.skill aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -1150,10 +1155,10 @@
 .pf2e-km .journal-page-content section.treasure aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.treasure aside > p i.fas {
+.pf2e-km .journal-page-content section.treasure aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.treasure aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.treasure aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -1378,10 +1383,10 @@
 .pf2e-km .journal-page-content section.milestone aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.milestone aside > p i.fas {
+.pf2e-km .journal-page-content section.milestone aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.milestone aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.milestone aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -1610,10 +1615,10 @@
 .pf2e-km .journal-page-content section.social aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.social aside > p i.fas {
+.pf2e-km .journal-page-content section.social aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.social aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.social aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -1844,10 +1849,10 @@
 .pf2e-km .journal-page-content section.stats aside > p {
   margin: 0.2rem 0;
 }
-.pf2e-km .journal-page-content section.stats aside > p i.fas {
+.pf2e-km .journal-page-content section.stats aside > p i.ph {
   float: left;
 }
-.pf2e-km .journal-page-content section.stats aside > p i.fas.fa-comment-alt {
+.pf2e-km .journal-page-content section.stats aside > p i.ph.ph-chat {
   float: right;
   margin-right: 8px;
 }
@@ -2165,7 +2170,7 @@
   line-height: 28px;
   height: 28px;
   color: black;
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.4rem;
 }
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol {
   padding: 2rem 0 1rem 0;
@@ -3008,15 +3013,16 @@ div#chat-notifications li.chat-message span.flavor-text div.page a.content-link:
 .pf2e-km .journal-page-content section.description.readout .readoutbutton,
 section#chat li.chat-message section.description.readout .readoutbutton,
 div#chat-notifications li.chat-message section.description.readout .readoutbutton {
-  content: "\f27a";
-  font: normal normal normal 18px/1 FontAwesome;
   cursor: pointer;
   color: #7a0303;
+  font-family: "Phosphor";
   position: absolute;
   right: -1.5rem;
   padding: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   visibility: hidden;
 }
 .pf2e-km .journal-page-content section.description.readout:hover .readoutbutton {
-  visibility: initial;
+  visibility: visible;
 }

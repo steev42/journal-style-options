@@ -46,21 +46,21 @@
     }
 
     section.description.readout .readoutbutton {
-        content: "\f27a";
-        font: normal normal normal 18px/1 FontAwesome;
         cursor: pointer;
         color: @km-darkred;
+        font-family: "Phosphor";
         position: absolute;
         right: -1.5rem;
         padding: 0.5rem;
+        font-size: 1.2rem;     // ensures the icon is visible
+        line-height: 1.2rem;   // prevents collapse
         visibility: hidden;
     }
-
 }
 
 @{journalcontent} {
 
     section.description.readout:hover .readoutbutton {
-        visibility: initial;
+        visibility: visible;
     }
 }
