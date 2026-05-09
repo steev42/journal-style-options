@@ -14,5 +14,5 @@
    "verified": "13"
  },
  "esmodules": ["scripts/module.js"],
- "styles": ["styles/style.css", "styles/pf2e-km.css", "styles/pf2e-av.css"]
+ "styles": ["styles/pf2e-km.css", "styles/pf2e-av.css"]
 }

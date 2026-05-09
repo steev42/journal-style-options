@@ -154,15 +154,27 @@
         border: unset;
         // ====    Buttons    ==== //
         search, footer {
+            padding: 0;
             z-index: 2;                      // Place them above the images
-            button.next, button.previous, a.action-button, input, button.create {
-                margin: 0.25rem;
+            button.next, button.previous, a.action-button, button.create, button.lock-mode, button.view-mode, button.toggle-search-mode, button.collapse-toggle {
+                margin: 0;
                 border: unset;
                 background: rgba(255, 255, 245, 0.75);
                 border-radius: 4px;
                 line-height: 28px;
                 height: 28px;
                 color: black;
+                padding: 0;
+            }
+            input {
+                margin: 0;
+                border: unset;
+                background: rgba(255, 255, 245, 0.75);
+                border-radius: 4px;
+                line-height: 28px;
+                height: 28px;
+                color: black;
+                padding: 0.25rem 0.5rem;
             }
         }
         // ====    Directory    ==== //

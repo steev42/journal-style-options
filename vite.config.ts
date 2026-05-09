@@ -7,7 +7,6 @@ export default defineConfig({
    rollupOptions: {
      input: {
        module: "src/ts/module.ts",
-       style: "src/styles/style.scss"
      },
      output: {
        dir: "dist",

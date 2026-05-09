@@ -2128,6 +2128,7 @@
 }
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search,
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer {
+  padding: 0;
   z-index: 2;
 }
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.next,
@@ -2136,17 +2137,35 @@
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.previous,
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search a.action-button,
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer a.action-button,
-.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search input,
-.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer input,
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.create,
-.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.create {
-  margin: 0.25rem;
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.create,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.lock-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.lock-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.view-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.view-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.toggle-search-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.toggle-search-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.collapse-toggle,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.collapse-toggle {
+  margin: 0;
   border: unset;
   background: rgba(255, 255, 245, 0.75);
   border-radius: 4px;
   line-height: 28px;
   height: 28px;
   color: black;
+  padding: 0;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search input,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer input {
+  margin: 0;
+  border: unset;
+  background: rgba(255, 255, 245, 0.75);
+  border-radius: 4px;
+  line-height: 28px;
+  height: 28px;
+  color: black;
+  padding: 0.25rem 0.5rem;
 }
 .pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol {
   padding: 2rem 0 1rem 0;
