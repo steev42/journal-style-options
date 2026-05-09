@@ -1,7 +1,7 @@
 {
- "id": "shattered-star-ap",
- "title": "Shattered Star AP for PF2E",
- "description": "A simple module using Typescript",
+ "id": "journal-style-options",
+ "title": "Journal Style Options",
+ "description": "This module provides a set of options for customizing the appearance of journal entries in Foundry VTT, primarily based on existing APs",
  "authors": [
    {
      "name": "E. Steev Ramsdell",
@@ -14,5 +14,5 @@
    "verified": "13"
  },
  "esmodules": ["scripts/module.js"],
- "styles": ["styles/style.css"]
+ "styles": ["styles/style.css", "styles/pf2e-km.css", "styles/pf2e-av.css"]
 }

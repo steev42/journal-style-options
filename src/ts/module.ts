@@ -1,40 +1,61 @@
 import { id as moduleId } from "../module.json";
-//import DogBrowser from "./apps/dogBrowser";
 
-interface MyModule extends Module {
- //dogBrowser: DogBrowser;
- KM_CLASS: string;
+interface MyModule extends foundry.packages.Module {
+  KM_CLASS: string;
 }
 
 let module: MyModule;
 
-class KingmakerJournalSheet extends JournalEntrySheet {
+class KingmakerJournalSheet extends foundry.applications.sheets.journal.JournalEntrySheet {
   static override get DEFAULT_OPTIONS() {
-      return foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {      
-        classes: [module.KM_CLASS]
-      });
-  /*constructor(doc, options) {
-    super(doc, options);
-    this.options.classes.push(module.KM_CLASS);*/
+    return { classes: ["pf2e-km"] as string[] };
   }
 }
 
-  Hooks.once("init", () => {
- console.log(`Initializing ${moduleId}`);
+class AVJournalSheet extends foundry.applications.sheets.journal.JournalEntrySheet {
+  /*constructor(doc, options) {
+    super(doc, options);
+    this.options.classes.push(CONFIG.cssClass);*/
+  static override get DEFAULT_OPTIONS() {
+    return { classes: ["pf2e-av"] as string[] };
+  }
+}
 
- module = game.modules!.get(moduleId) as MyModule;
- //module.dogBrowser = new DogBrowser();
-/**
- * The CSS class used to identify Kingmaker applications.
- * @type {string}
- */
- module.KM_CLASS = "pf2e-km";
-//foundry.applications.api.ApplicationV2.registerSheet(JournalEntry, moduleId, KingmakerJournalSheet, {
-foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntry, moduleId, KingmakerJournalSheet, {
+/*class KingmakerTextPageSheet extends foundry.applications.sheets.journal.JournalEntryPageTextSheet{
+  static override get DEFAULT_OPTIONS() {
+    return { classes: ["pf2e-km"] as string[] };
+  } 
+}*/
+
+Hooks.once("init", () => {
+  console.log(`Initializing ${moduleId}`);
+
+  module = game.modules!.get(moduleId) as MyModule;
+
+  /**
+   * The CSS class used to identify Kingmaker applications.
+   * @type {string}
+   */
+  module.KM_CLASS = "pf2e-km";
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntry, "pf2e-km", KingmakerJournalSheet, {
     types: ["base"],
     label: "Pathfinder Kingmaker",
     makeDefault: false
   });
+
+  foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntry, "pf2e-av", AVJournalSheet, {
+      types: ["base"],
+      label: "Abomination Vaults",
+      makeDefault: false,
+      canConfigure: true
+  });
+
+ /* foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntryPage, moduleId, KingmakerTextPageSheet, {
+    types: ["text"],
+    label: "Pathfinder Kingmaker",
+    makeDefault: false
+  });*/
+  
 });
 
 // @ts-ignore - Hook signature mismatch

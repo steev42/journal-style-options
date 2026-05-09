@@ -1,0 +1,66 @@
+//   ========================================  //
+//   NARRATIVE TEXT (AFFECTS JOURNALS & CHAT)  //
+//   ========================================  //
+
+@{journalcontent}, section#chat li.chat-message, div#chat-notifications li.chat-message {
+
+    // Readalout/Narrative/Descriptive text
+    section.description {
+        position: relative;
+        margin: 0.6rem 0;
+        p {
+        margin: 8px 0;
+        overflow: auto;
+        color: @km-red;
+        padding-left: 0.4rem;
+        padding-right:0.4rem;
+            &:not(:first-child) {
+                text-indent: 1.2rem;
+            }
+        }
+        p:first-of-type {
+            border-top: 1px solid @km-red;
+            padding-top: 8px;
+        }
+        p:last-of-type {
+            border-bottom: 1px solid @km-red;
+            padding-bottom: 7px;
+        }
+    }
+
+    span.flavor-text div.page {
+        width: 100%;
+        background: none;
+        outline: none;
+        height: 2.25rem;
+        a.content-link {
+            text-align: center;
+            border-radius: 4px;
+            line-height: 1.5rem;
+            display: block;
+            border: 1px solid #a59999;
+            &:active {
+                background: #c9c4c4;
+            }
+        }
+    }
+
+    section.description.readout .readoutbutton {
+        content: "\f27a";
+        font: normal normal normal 18px/1 FontAwesome;
+        cursor: pointer;
+        color: @km-darkred;
+        position: absolute;
+        right: -1.5rem;
+        padding: 0.5rem;
+        visibility: hidden;
+    }
+
+}
+
+@{journalcontent} {
+
+    section.description.readout:hover .readoutbutton {
+        visibility: initial;
+    }
+}
