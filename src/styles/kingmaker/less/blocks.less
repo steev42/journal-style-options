@@ -1,0 +1,592 @@
+@{journalcontent} {
+
+    //  =================  //
+    //        TABLES       //
+    //  =================  //
+
+    // Tables
+    table {
+        border-top: unset;
+        border-bottom: unset;
+        &:not(.noborder) td + td {
+            border-left:1px solid black;
+        }
+        tr {
+            line-height: 1.5rem;
+            font-size: 1rem;
+            td, th {
+                min-width: 3rem;
+                padding: 0.25rem;
+            }
+        }
+        // Header
+        thead {
+            border-top: unset;
+            border-bottom: unset;
+            th, th p {
+                font-size: 1rem;
+                font-family: "Roundest Bold";
+                background-color: @km-darkgreen;
+                color: white;
+                text-align: left;
+                a, a.inline-roll.roll {
+                    color: white;
+                    i {
+                        color: white;
+                    }
+                }
+            }
+        }
+        // Body
+        tbody {
+            // Colour rows
+            tr:nth-child(even) { background-color: @km-darkbeige; }
+            tr:nth-child(odd) { background-color: @km-brown; }
+            td {
+                font-family: "Good OT";
+            }
+        }
+        // Style cols
+        &.center1 tr :nth-child(1),
+        &.center2 tr :nth-child(2),
+        &.center3 tr :nth-child(3),
+        &.center4 tr :nth-child(4),
+        &.center5 tr :nth-child(5),
+        &.centerall tr td,
+        &.centerall tr th {
+            white-space: nowrap;
+            text-align: center;
+            p { text-align: center; }
+        }
+        // Other table styles
+        &.mid {
+            width: 80%;
+            margin: auto;
+        }
+        &.thin {
+            table-layout: fixed;
+            th, td {
+                max-width: 100px;
+            }
+        }
+        &.static {
+            tr>:first-child {
+                width: 170px;
+            }
+        }
+    }
+
+    //  =================  //
+    //  Asides and Floats  //
+    //  =================  //
+
+    // Top-level asides- those inside a box should be getting styled by that box's class.
+    &>aside, section.spotlight>aside {
+        border-top: 0.5rem solid white;
+        border-bottom: 0.5rem solid white;
+        border-image: url(assets/border-aside.webp) 94% 0/1rem 0/0 repeat;
+        background-color: @km-brown;
+        border-radius: 8px;
+        padding: 0.1rem 0.7rem;
+        margin: 1rem 0; // Sets the default margin (only used if the aside isn't floated)
+        h3 {
+            text-align: center;
+            font-family: "Roundest Bold";
+            font-size: 1.1rem;
+            color: @km-darkgreen;
+            margin: 0.25rem 0 -0.25rem 0;
+        }
+        &.left, &.right {
+            p, li {
+            font-family: "Good OT Cond";
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            }
+        }
+        ul {
+            padding: unset;
+            margin: 0.25rem 0;
+            line-height: 1.2rem;
+        }
+        hr {
+            background: repeat-x center / auto 12px url(assets/border-hr.webp);
+            border:unset;
+            height: 100%;
+            width: 100%;
+            min-height: 8px;
+        }
+    }
+
+    // Governs all uses of the floats, used on the general asides, quest sections, or as banners in other boxes
+    .left {
+        float: left;
+        margin: 0 0.75rem 0 0;
+        clear: left;
+    }
+    .right {
+        float: right;
+        margin: 0 0 0 0.75rem;
+        clear: right;
+    }
+    .left, .right{
+        max-width: 350px;
+        padding: 0.5rem;
+    }
+    .left, .right {
+        >h3 {
+            text-align: center;
+            font-family: "Roundest Bold";
+            margin: 0 0 -8px 0;
+            font-size: 1rem;
+            color: @km-darkgreen;
+        }
+    }
+
+    // ================== //
+    //    Special Text    //
+    // ================== //
+
+    section.fvtt {
+        padding: 0 0.5rem;
+        background-color: #ffffff50;
+        border: 1px @fvtt-orange solid;
+        border-radius: 8px;
+        &.thin {
+            max-width: 250px;
+        }
+        &.right, &.left {
+            min-width: 250px;
+        }
+        header {
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-height: 1.5rem;
+            border-bottom: 1px solid @fvtt-orange;
+            p:first-child {
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+        }
+        header>p, strong, @{documentlinks}, h4, ::marker {
+            color: @fvtt-orange;
+        }
+        header>h4 {
+            font-size: 1.15rem;
+            text-transform: uppercase;
+        }
+        &.green {
+            border-color: @km-darkgreen;
+            header {
+                border-color: @km-darkgreen;
+            }
+            header>p, strong, @{documentlinks}, h4 {
+                color: @km-darkgreen;
+            }
+        }
+        .visibility {
+            header>p, strong, @{documentlinks}, h4 {
+                color: @km-purple;
+            }
+            &:before {
+                content: "\f06e";
+                font: var(--fa-font-solid);
+                color: @km-purple;
+                display: inline-block;
+                font-family: "Font Awesome 6 Pro";
+                padding-right: 0.25rem;
+            }
+        }
+    }
+
+    // The SVG icon legend used in the Hexploration rules
+    section.legend {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem;
+        div {
+            flex: 0 0 45%;
+            justify-content: space-around;
+            display: flex;
+        }
+        p {
+            flex: 1;
+            text-align: left;
+        }
+        img {
+            filter: invert();
+            flex: 0 0 24px;
+            text-align: right;
+            padding-right: 2px;
+        }
+        .caption {
+            text-align: center;
+        }
+    }
+
+    // Back and forth or lists of questions and answers
+    section.dialogue {
+        text-indent: 1rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        :not(strong) {
+            color: #424242;
+        }
+    }
+
+    dl.list {
+        dt {
+            float: left;
+            height: 2rem;
+            z-index: 1;
+            margin: 0;
+        }
+        dd {
+            overflow: auto;
+            height: 2rem;
+            z-index: 0;
+            margin: 0;
+            p {
+                text-align: right;
+            }
+        }
+        p {
+            margin: 6px 0.5rem;
+        }
+        &>:nth-child(4n-2), &>:nth-child(4n-3) {
+            background: #d2c3aa85;
+        }
+    }
+
+    // Handwritten notes
+    section.handwritten {
+        background-image: url("./assets/letter.webp");
+        background-size: 100% 100%;
+        filter: drop-shadow(0 0 4px);
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        &.tall {
+            background-image: url("./assets/noteback-tall.webp");
+        }
+        &.wide {
+            background-image: url("./assets/noteback-wide.webp");
+        }
+        p {
+            font-family: "La Belle Aurore";
+            line-height: 1.5rem;
+            font-size: 1.3rem;
+            color: #5e1100e3;
+        }
+        .letter-textblock {
+
+            display: block;
+            padding-right: 6rem;
+            border: 2px solid #7a0303;
+            padding: 15px;
+            span.dropcap{
+                font: 8rem "Gloucester Initialen", sans-serif;
+                float: left;
+                margin: -10px 5px -10px 0px;
+                color: @km-darkred;
+            }
+            &.formal{
+                p {
+                    font-family: @calligraphy;
+                    line-height: 1.5rem;
+                    font-size: 1.6rem;
+                    color: #3b2200;
+                    text-shadow: 0 0 black;
+                }
+            }
+            figure.seal {
+                img {
+                    width: 100px;
+                    margin: 20px auto;
+                }
+            }
+            p.signature {
+                font-family: @signature;
+            }
+        }
+
+    }
+
+    section.secret {
+        margin: 0.5rem 0;
+        background-image: linear-gradient(to right, @transparency -5%, ~"@{secret-back}" 10% 90%, @transparency 105%);
+        border-top: 1px @secret-border solid;
+        border-bottom: 1px @secret-border solid;
+        padding: 0.5rem;
+        strong, h3 {
+            color: @secret-head;
+        }
+        h3 {
+            line-height: 1.5rem;
+            font-size: 1.4rem;
+            text-align: center;
+            margin: 0;
+        }
+        button {
+            height: 1.5rem;
+            position: absolute;
+            margin: unset;
+        }
+        &.revealed {
+            background-image: linear-gradient(to right, @transparency -5%, ~"@{secret-revealed-back}" 10% 90%, @transparency 105%);
+        }
+    }
+
+    // Used for character biographies
+    p.bio {
+        font-family: "Good OT Italic";
+        font-size: 1.1rem;
+        color: @km-darkgreen;
+    }
+
+    // Used to split columns, usually for a picture and text
+    section.spotlight {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 0.75rem;
+        //Manual sizing
+        .flexfill {
+            flex: 1 1 100%
+        }
+        .flex70 {
+            flex: 1 0 70%
+        }
+        .flex50 {
+            flex: 1 0 50%
+        }
+        .flex40 {
+            flex: 1 0 40%
+        }
+        .flex30 {
+            flex: 1 0 30%
+        }
+        .thin {
+            flex: 0 0 180px;
+        }
+        //Default sizes
+        >p, article, table {
+            flex: 1 1 60%;
+        }
+        aside, figure {
+            flex: 1 1 40%;
+        }
+        figure {
+            &.round img {
+                border-radius: 25%;
+            }
+        }
+        &.half>* {
+            flex: 1 1 50%;
+        }
+        //Example use would be for columns
+        &.baseline {
+            place-items: baseline;
+        }
+    }
+
+    section.block { // Used for the lists of features in the rules journals but I could also use it for research?
+        box-shadow: 0px 0px 8px 1px #2772343b inset; // Colour could be used for a variable
+        border-radius: 0; // Should be default but useful to override the rules set if combined with another type (eg stats)
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        img {
+            filter: drop-shadow(0px 0px 4px 0px @km-darkgreen);
+        }
+        &>h3, &>header {
+            padding-bottom: 2px;
+            border-bottom: 1px solid @km-lightgreen;
+            h3 {
+                border: unset;
+            }
+        }
+        header {
+            margin: 0;
+        }
+        p:first-child, h3:first-child {
+            margin-top: 0rem;
+        }
+        p:last-child {
+            margin-bottom: 0rem;
+        }
+    }
+    section.block:first-child {
+        border-radius: 1.25rem 1.25rem  0 0;
+    }
+    section.block:last-child  {
+        border-radius: 0 0 1.25rem  1.25rem ;
+    }
+
+    article.blockgroup { // Groups several sections together into one "block"!
+        &.icons figure {
+            flex: 0 0 128px;
+            img {
+                border-radius: 5%;
+            }
+        }
+        &.iconsarray header {
+            align-items: center;
+            figure {
+                display: flex;
+                gap: 0.25rem;
+                width: 40px;
+                justify-content: flex-end;
+                img {
+                    border-radius: 30%;
+                }
+            }
+        }
+    }
+
+    .center { // Example of use is the "maths" sections in the kingdom rules
+        text-align: center;
+    }
+
+    ul>p, table p {
+        margin: 0;
+    }
+
+    ul.outcomes, section.event  {
+        strong {
+            color: @km-darkgreen;
+        }
+        hr {
+            border-color: @km-lightgreen;
+        }
+    }
+    ul.outcomes {
+        padding: 0 0.5rem;
+        p {
+            margin: 0.25rem 0;
+        }
+        li {
+            padding: 0 0 0 0.25rem;
+        }
+    }
+
+    // Creates the "traits" styling
+    ul.traits {
+        list-style-type: none;
+        display: flex;
+        gap: 0.2rem;
+        margin:unset;
+        li {
+            border-left: 3px solid @trait-border;
+            border-right: 3px solid @trait-border;
+            background: @km-lightgreen;
+            color: white;
+            padding: 2px 6px 1px 6px;
+            text-transform: uppercase;
+            font-family: 'Good OT Cond Bold';
+            max-height: 24px;
+            &.rarity {
+                background: @trait-rarity;
+            }
+            &.alignment {
+                background: @trait-alignment;
+            }
+            &.size {
+                background: @trait-size;
+            }
+            &.rarity-unique {
+                background: @pf2e-trait-unique;
+            }
+            &.rarity-rare {
+                background: @pf2e-trait-rare;
+            }
+            &.rarity-uncommon {
+                background: @pf2e-trait-uncommon;
+            }
+        }
+    }
+    // Moves them around when they're the first one on the page (these should be combined if they're not different)
+    &>ul.traits:first-child {
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        line-height: 1.6rem;
+        font-size: 1.6rem;
+        text-align: right;
+        margin: unset;
+        text-transform: uppercase;
+    }
+
+    &>.subtitle:first-child {
+        position: absolute;
+        right: 1rem;
+        top: 0;
+        line-height: 1.6rem;
+        font-size: 1.6rem;
+        text-align: right;
+        margin: unset;
+        text-transform: uppercase;
+    }
+
+    // ================== //
+    //      Misc Bits     //
+    // ================== //
+
+    // Separates contained blocks on opposite sides of the same row, useful for headers
+    .split {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        h1, h2, h3, h4, p {
+            margin:unset;
+        }
+        ul {
+            margin: auto 0;
+        }
+    }
+
+    hr {
+        border-top: none;
+        border-bottom: 1px @km-lightgreen solid;
+    }
+
+    .underlined {
+        border-bottom: 1px solid @km-darkgreen;
+    }
+
+    h2.underlined {
+        border-bottom: 2px solid @km-darkgreen;
+        padding-bottom: 2px;
+    }
+
+    header {
+        margin-bottom: 0.5rem;
+        // Applies the lower border (used in conjunction with above to emulate Paizo style borders)
+        &.underlined {
+            border-bottom: 2px solid @km-darkgreen;
+            h1, h2, h3, h4, p {
+                margin: 0;
+            }
+        }
+    }
+
+    // Makes an element clear floats
+    .clear {
+        clear: both;
+    }
+    hr.clear {
+        border: none;
+        margin: unset;
+    }
+    // Makes an element not clear floats
+    .noclear {
+        clear: none;
+        overflow: auto;
+    }
+
+}

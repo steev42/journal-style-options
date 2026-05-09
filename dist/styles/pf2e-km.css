@@ -1,0 +1,3022 @@
+@font-face {
+  font-family: "Taroca";
+  src: url(fonts/taroca.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Gin";
+  src: url(fonts/gin.otf) format('opentype');
+}
+@font-face {
+  font-family: "Roundest Bold";
+  src: url(fonts/roundest-bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Good OT';
+  src: url(fonts/goodot.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Good OT Bold';
+  src: url(fonts/goodot-bold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Good OT Italic';
+  src: url(fonts/goodot-italic.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Good OT Bold Italic';
+  src: url(fonts/goodot-bolditalic.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Good OT Cond';
+  src: url(fonts/goodot-cond.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Good OT Cond Bold';
+  src: url(fonts/goodot-condbold.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Gloucester Initialen';
+  src: url(fonts/gloucester-initialen.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Meddon';
+  src: url(fonts/meddon.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Prince Valiant';
+  src: url(fonts/prince-valiant.woff2) format('woff2');
+}
+.pf2e-km .journal-page-content header {
+  margin-top: 12px;
+}
+.pf2e-km .journal-page-content header h1,
+.pf2e-km .journal-page-content header h2,
+.pf2e-km .journal-page-content header h3,
+.pf2e-km .journal-page-content header h4 {
+  margin: unset;
+}
+.pf2e-km .journal-page-content h1 {
+  font-family: "Taroca", sans-serif;
+  color: #004416;
+  font-size: 1.75rem;
+  border: unset;
+  line-height: 22px;
+  margin: 14px 0 10px 0;
+}
+.pf2e-km .journal-page-content h2 {
+  font-family: "Gin", sans-serif;
+  color: #004416;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  margin: 1rem 0 0.75rem 0;
+  border: unset;
+}
+.pf2e-km .journal-page-content h3,
+.pf2e-km .journal-page-content h4 {
+  font-family: "Good OT Cond Bold", sans-serif;
+  font-size: 1.25rem;
+  border: unset;
+  margin: 12px 0 0 0;
+}
+.pf2e-km .journal-page-content h3 {
+  color: #004416;
+}
+.pf2e-km .journal-page-content h4 {
+  color: #548433;
+}
+.pf2e-km .journal-page-content h4.sub {
+  color: #004416;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  text-align: right;
+  position: absolute;
+  right: 0.75rem;
+  top: 0rem;
+  margin: unset;
+}
+.pf2e-km .journal-page-content p,
+.pf2e-km .journal-page-content li,
+.pf2e-km .journal-page-content label {
+  font-family: "Good OT", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.25rem;
+}
+.pf2e-km .journal-page-content ul:not(.list) {
+  list-style-type: none;
+}
+.pf2e-km .journal-page-content .with-repost,
+.pf2e-km .journal-page-content .content-link,
+.pf2e-km .journal-page-content .inline-roll,
+.pf2e-km .journal-page-content .inline-check,
+.pf2e-km .journal-page-content span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content .with-repost > i,
+.pf2e-km .journal-page-content .content-link > i {
+  background: none;
+  border: none;
+  line-height: 1rem;
+  outline: none;
+  color: #004416;
+  padding: 0 2px 0 0;
+}
+.pf2e-km .journal-page-content .with-repost:hover,
+.pf2e-km .journal-page-content .content-link:hover,
+.pf2e-km .journal-page-content .inline-roll:hover,
+.pf2e-km .journal-page-content .inline-check:hover,
+.pf2e-km .journal-page-content span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content .with-repost > i:hover,
+.pf2e-km .journal-page-content .content-link > i:hover {
+  text-shadow: 0 0 10px #548433;
+}
+.pf2e-km .journal-page-content .with-repost i::before,
+.pf2e-km .journal-page-content .content-link i::before,
+.pf2e-km .journal-page-content .inline-roll i::before,
+.pf2e-km .journal-page-content .inline-check i::before,
+.pf2e-km .journal-page-content span[data-visibility]:not([data-visibility=all]) i::before,
+.pf2e-km .journal-page-content .with-repost > i i::before,
+.pf2e-km .journal-page-content .content-link > i i::before {
+  margin-left: 2px;
+}
+.pf2e-km .journal-page-content p a.content-link,
+.pf2e-km .journal-page-content p a.inline-roll {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.pf2e-km .journal-page-content p span.label {
+  border-bottom: 1px solid;
+}
+.pf2e-km .journal-page-content span.magic {
+  font-style: italic;
+  color: #004416;
+}
+.pf2e-km .journal-page-content p > a.content-link > i,
+.pf2e-km .journal-page-content p > a.inline-check > i.fa-dice-d20 {
+  display: none;
+}
+.pf2e-km .journal-page-content ul > li > p > a.content-link > i,
+.pf2e-km .journal-page-content ul > li > p > a.inline-check > i.fa-dice-d20 {
+  display: inline-block;
+}
+.pf2e-km .journal-page-content section.encounter {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pf2e-km .journal-page-content section.encounter header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #9b3532;
+}
+.pf2e-km .journal-page-content section.encounter header h1,
+.pf2e-km .journal-page-content section.encounter header h2,
+.pf2e-km .journal-page-content section.encounter header h3,
+.pf2e-km .journal-page-content section.encounter header h4,
+.pf2e-km .journal-page-content section.encounter header p,
+.pf2e-km .journal-page-content section.encounter header .with-repost,
+.pf2e-km .journal-page-content section.encounter header .content-link,
+.pf2e-km .journal-page-content section.encounter header .inline-roll,
+.pf2e-km .journal-page-content section.encounter header .inline-check,
+.pf2e-km .journal-page-content section.encounter header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.encounter header .with-repost > i,
+.pf2e-km .journal-page-content section.encounter header .content-link > i {
+  color: #892522;
+}
+.pf2e-km .journal-page-content section.encounter header h3,
+.pf2e-km .journal-page-content section.encounter header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.encounter header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.encounter aside {
+  background: #892522;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.encounter aside h1,
+.pf2e-km .journal-page-content section.encounter aside h2,
+.pf2e-km .journal-page-content section.encounter aside h3,
+.pf2e-km .journal-page-content section.encounter aside h4,
+.pf2e-km .journal-page-content section.encounter aside p,
+.pf2e-km .journal-page-content section.encounter aside .with-repost,
+.pf2e-km .journal-page-content section.encounter aside .content-link,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll,
+.pf2e-km .journal-page-content section.encounter aside .inline-check,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.encounter aside h1::before,
+.pf2e-km .journal-page-content section.encounter aside h2::before,
+.pf2e-km .journal-page-content section.encounter aside h3::before,
+.pf2e-km .journal-page-content section.encounter aside h4::before,
+.pf2e-km .journal-page-content section.encounter aside p::before,
+.pf2e-km .journal-page-content section.encounter aside .with-repost::before,
+.pf2e-km .journal-page-content section.encounter aside .content-link::before,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll::before,
+.pf2e-km .journal-page-content section.encounter aside .inline-check::before,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i::before,
+.pf2e-km .journal-page-content section.encounter aside h1::after,
+.pf2e-km .journal-page-content section.encounter aside h2::after,
+.pf2e-km .journal-page-content section.encounter aside h3::after,
+.pf2e-km .journal-page-content section.encounter aside h4::after,
+.pf2e-km .journal-page-content section.encounter aside p::after,
+.pf2e-km .journal-page-content section.encounter aside .with-repost::after,
+.pf2e-km .journal-page-content section.encounter aside .content-link::after,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll::after,
+.pf2e-km .journal-page-content section.encounter aside .inline-check::after,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.encounter aside .with-repost:hover,
+.pf2e-km .journal-page-content section.encounter aside .content-link:hover,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.encounter aside .inline-check:hover,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.encounter aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.encounter aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.encounter aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.encounter aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.encounter aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.encounter aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.encounter aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.encounter aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.encounter aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.encounter aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.encounter aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.encounter aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.encounter aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.encounter aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.encounter aside.token > img,
+.pf2e-km .journal-page-content section.encounter aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.encounter aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.encounter strong,
+.pf2e-km .journal-page-content section.encounter ul.outcomes strong,
+.pf2e-km .journal-page-content section.encounter h1,
+.pf2e-km .journal-page-content section.encounter h2,
+.pf2e-km .journal-page-content section.encounter h3,
+.pf2e-km .journal-page-content section.encounter .with-repost,
+.pf2e-km .journal-page-content section.encounter .content-link,
+.pf2e-km .journal-page-content section.encounter .inline-roll,
+.pf2e-km .journal-page-content section.encounter .inline-check,
+.pf2e-km .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.encounter .with-repost > i,
+.pf2e-km .journal-page-content section.encounter .content-link > i,
+.pf2e-km .journal-page-content section.encounter span.magic {
+  color: #892522;
+}
+.pf2e-km .journal-page-content section.encounter strong::before,
+.pf2e-km .journal-page-content section.encounter ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.encounter h1::before,
+.pf2e-km .journal-page-content section.encounter h2::before,
+.pf2e-km .journal-page-content section.encounter h3::before,
+.pf2e-km .journal-page-content section.encounter .with-repost::before,
+.pf2e-km .journal-page-content section.encounter .content-link::before,
+.pf2e-km .journal-page-content section.encounter .inline-roll::before,
+.pf2e-km .journal-page-content section.encounter .inline-check::before,
+.pf2e-km .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.encounter .with-repost > i::before,
+.pf2e-km .journal-page-content section.encounter .content-link > i::before,
+.pf2e-km .journal-page-content section.encounter span.magic::before,
+.pf2e-km .journal-page-content section.encounter strong::after,
+.pf2e-km .journal-page-content section.encounter ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.encounter h1::after,
+.pf2e-km .journal-page-content section.encounter h2::after,
+.pf2e-km .journal-page-content section.encounter h3::after,
+.pf2e-km .journal-page-content section.encounter .with-repost::after,
+.pf2e-km .journal-page-content section.encounter .content-link::after,
+.pf2e-km .journal-page-content section.encounter .inline-roll::after,
+.pf2e-km .journal-page-content section.encounter .inline-check::after,
+.pf2e-km .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.encounter .with-repost > i::after,
+.pf2e-km .journal-page-content section.encounter .content-link > i::after,
+.pf2e-km .journal-page-content section.encounter span.magic::after {
+  color: #892522;
+}
+.pf2e-km .journal-page-content section.encounter .with-repost:hover,
+.pf2e-km .journal-page-content section.encounter .content-link:hover,
+.pf2e-km .journal-page-content section.encounter .inline-roll:hover,
+.pf2e-km .journal-page-content section.encounter .inline-check:hover,
+.pf2e-km .journal-page-content section.encounter span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.encounter .with-repost > i:hover,
+.pf2e-km .journal-page-content section.encounter .content-link > i:hover {
+  text-shadow: 0 0 10px #892522;
+}
+.pf2e-km .journal-page-content section.encounter hr {
+  border-bottom: 1px #9b3532 solid;
+}
+.pf2e-km .journal-page-content section.encounter > article,
+.pf2e-km .journal-page-content section.encounter.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(130, 80, 80, 0.1) 5%, rgba(130, 80, 80, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #9b3532;
+}
+.pf2e-km .journal-page-content section.encounter header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.encounter header {
+  text-transform: uppercase;
+}
+.pf2e-km .journal-page-content header.encounter {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #9b3532;
+  text-transform: uppercase;
+}
+.pf2e-km .journal-page-content header.encounter h1,
+.pf2e-km .journal-page-content header.encounter h2,
+.pf2e-km .journal-page-content header.encounter h3,
+.pf2e-km .journal-page-content header.encounter h4,
+.pf2e-km .journal-page-content header.encounter p,
+.pf2e-km .journal-page-content header.encounter .with-repost,
+.pf2e-km .journal-page-content header.encounter .content-link,
+.pf2e-km .journal-page-content header.encounter .inline-roll,
+.pf2e-km .journal-page-content header.encounter .inline-check,
+.pf2e-km .journal-page-content header.encounter span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content header.encounter .with-repost > i,
+.pf2e-km .journal-page-content header.encounter .content-link > i {
+  color: #892522;
+}
+.pf2e-km .journal-page-content header.encounter h3,
+.pf2e-km .journal-page-content header.encounter p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content header.encounter h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content aside.encounter,
+.pf2e-km .journal-page-content section.encounter aside {
+  background: #892522;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+  border-bottom: 1rem solid white;
+  border-image: url("assets/border-encounter.webp") 0 0 100% 0/0 0 1.25rem 0/0 repeat;
+}
+.pf2e-km .journal-page-content aside.encounter h1,
+.pf2e-km .journal-page-content section.encounter aside h1,
+.pf2e-km .journal-page-content aside.encounter h2,
+.pf2e-km .journal-page-content section.encounter aside h2,
+.pf2e-km .journal-page-content aside.encounter h3,
+.pf2e-km .journal-page-content section.encounter aside h3,
+.pf2e-km .journal-page-content aside.encounter h4,
+.pf2e-km .journal-page-content section.encounter aside h4,
+.pf2e-km .journal-page-content aside.encounter p,
+.pf2e-km .journal-page-content section.encounter aside p,
+.pf2e-km .journal-page-content aside.encounter .with-repost,
+.pf2e-km .journal-page-content section.encounter aside .with-repost,
+.pf2e-km .journal-page-content aside.encounter .content-link,
+.pf2e-km .journal-page-content section.encounter aside .content-link,
+.pf2e-km .journal-page-content aside.encounter .inline-roll,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll,
+.pf2e-km .journal-page-content aside.encounter .inline-check,
+.pf2e-km .journal-page-content section.encounter aside .inline-check,
+.pf2e-km .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content aside.encounter .with-repost > i,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i,
+.pf2e-km .journal-page-content aside.encounter .content-link > i,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content aside.encounter h1::before,
+.pf2e-km .journal-page-content section.encounter aside h1::before,
+.pf2e-km .journal-page-content aside.encounter h2::before,
+.pf2e-km .journal-page-content section.encounter aside h2::before,
+.pf2e-km .journal-page-content aside.encounter h3::before,
+.pf2e-km .journal-page-content section.encounter aside h3::before,
+.pf2e-km .journal-page-content aside.encounter h4::before,
+.pf2e-km .journal-page-content section.encounter aside h4::before,
+.pf2e-km .journal-page-content aside.encounter p::before,
+.pf2e-km .journal-page-content section.encounter aside p::before,
+.pf2e-km .journal-page-content aside.encounter .with-repost::before,
+.pf2e-km .journal-page-content section.encounter aside .with-repost::before,
+.pf2e-km .journal-page-content aside.encounter .content-link::before,
+.pf2e-km .journal-page-content section.encounter aside .content-link::before,
+.pf2e-km .journal-page-content aside.encounter .inline-roll::before,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll::before,
+.pf2e-km .journal-page-content aside.encounter .inline-check::before,
+.pf2e-km .journal-page-content section.encounter aside .inline-check::before,
+.pf2e-km .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content aside.encounter .with-repost > i::before,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i::before,
+.pf2e-km .journal-page-content aside.encounter .content-link > i::before,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i::before,
+.pf2e-km .journal-page-content aside.encounter h1::after,
+.pf2e-km .journal-page-content section.encounter aside h1::after,
+.pf2e-km .journal-page-content aside.encounter h2::after,
+.pf2e-km .journal-page-content section.encounter aside h2::after,
+.pf2e-km .journal-page-content aside.encounter h3::after,
+.pf2e-km .journal-page-content section.encounter aside h3::after,
+.pf2e-km .journal-page-content aside.encounter h4::after,
+.pf2e-km .journal-page-content section.encounter aside h4::after,
+.pf2e-km .journal-page-content aside.encounter p::after,
+.pf2e-km .journal-page-content section.encounter aside p::after,
+.pf2e-km .journal-page-content aside.encounter .with-repost::after,
+.pf2e-km .journal-page-content section.encounter aside .with-repost::after,
+.pf2e-km .journal-page-content aside.encounter .content-link::after,
+.pf2e-km .journal-page-content section.encounter aside .content-link::after,
+.pf2e-km .journal-page-content aside.encounter .inline-roll::after,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll::after,
+.pf2e-km .journal-page-content aside.encounter .inline-check::after,
+.pf2e-km .journal-page-content section.encounter aside .inline-check::after,
+.pf2e-km .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content aside.encounter .with-repost > i::after,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i::after,
+.pf2e-km .journal-page-content aside.encounter .content-link > i::after,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content aside.encounter .with-repost:hover,
+.pf2e-km .journal-page-content section.encounter aside .with-repost:hover,
+.pf2e-km .journal-page-content aside.encounter .content-link:hover,
+.pf2e-km .journal-page-content section.encounter aside .content-link:hover,
+.pf2e-km .journal-page-content aside.encounter .inline-roll:hover,
+.pf2e-km .journal-page-content section.encounter aside .inline-roll:hover,
+.pf2e-km .journal-page-content aside.encounter .inline-check:hover,
+.pf2e-km .journal-page-content section.encounter aside .inline-check:hover,
+.pf2e-km .journal-page-content aside.encounter span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.encounter aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content aside.encounter .with-repost > i:hover,
+.pf2e-km .journal-page-content section.encounter aside .with-repost > i:hover,
+.pf2e-km .journal-page-content aside.encounter .content-link > i:hover,
+.pf2e-km .journal-page-content section.encounter aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content aside.encounter h3,
+.pf2e-km .journal-page-content section.encounter aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content aside.encounter h3 a.content-link i,
+.pf2e-km .journal-page-content section.encounter aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content aside.encounter > p,
+.pf2e-km .journal-page-content section.encounter aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content aside.encounter > p i.fas,
+.pf2e-km .journal-page-content section.encounter aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content aside.encounter > p i.fas.fa-comment-alt,
+.pf2e-km .journal-page-content section.encounter aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content aside.encounter ul,
+.pf2e-km .journal-page-content section.encounter aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content aside.encounter ul li,
+.pf2e-km .journal-page-content section.encounter aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content aside.encounter img,
+.pf2e-km .journal-page-content section.encounter aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content aside.encounter.wide img,
+.pf2e-km .journal-page-content section.encounter aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content aside.encounter.thin img,
+.pf2e-km .journal-page-content section.encounter aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content aside.encounter.token,
+.pf2e-km .journal-page-content section.encounter aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content aside.encounter.token.wide,
+.pf2e-km .journal-page-content section.encounter aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content aside.encounter.token.thin,
+.pf2e-km .journal-page-content section.encounter aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content aside.encounter.porthole,
+.pf2e-km .journal-page-content section.encounter aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content aside.encounter.token > img,
+.pf2e-km .journal-page-content section.encounter aside.token > img,
+.pf2e-km .journal-page-content aside.encounter.porthole > img,
+.pf2e-km .journal-page-content section.encounter aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content aside.encounter.clip,
+.pf2e-km .journal-page-content section.encounter aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content aside.encounter.noimage,
+.pf2e-km .journal-page-content section.encounter aside.noimage {
+  border-top: 1rem solid white;
+  min-width: 180px;
+  border-image: url("assets/border-encounter.webp") 100% 0 100% 0/1.25rem 0 1.25rem 0/0 repeat;
+}
+.pf2e-km .journal-page-content section.quest {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pf2e-km .journal-page-content section.quest header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #3b2200;
+}
+.pf2e-km .journal-page-content section.quest header h1,
+.pf2e-km .journal-page-content section.quest header h2,
+.pf2e-km .journal-page-content section.quest header h3,
+.pf2e-km .journal-page-content section.quest header h4,
+.pf2e-km .journal-page-content section.quest header p,
+.pf2e-km .journal-page-content section.quest header .with-repost,
+.pf2e-km .journal-page-content section.quest header .content-link,
+.pf2e-km .journal-page-content section.quest header .inline-roll,
+.pf2e-km .journal-page-content section.quest header .inline-check,
+.pf2e-km .journal-page-content section.quest header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.quest header .with-repost > i,
+.pf2e-km .journal-page-content section.quest header .content-link > i {
+  color: #461502;
+}
+.pf2e-km .journal-page-content section.quest header h3,
+.pf2e-km .journal-page-content section.quest header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.quest header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.quest aside {
+  background: white;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.quest aside h1,
+.pf2e-km .journal-page-content section.quest aside h2,
+.pf2e-km .journal-page-content section.quest aside h3,
+.pf2e-km .journal-page-content section.quest aside h4,
+.pf2e-km .journal-page-content section.quest aside p,
+.pf2e-km .journal-page-content section.quest aside .with-repost,
+.pf2e-km .journal-page-content section.quest aside .content-link,
+.pf2e-km .journal-page-content section.quest aside .inline-roll,
+.pf2e-km .journal-page-content section.quest aside .inline-check,
+.pf2e-km .journal-page-content section.quest aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.quest aside .with-repost > i,
+.pf2e-km .journal-page-content section.quest aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.quest aside h1::before,
+.pf2e-km .journal-page-content section.quest aside h2::before,
+.pf2e-km .journal-page-content section.quest aside h3::before,
+.pf2e-km .journal-page-content section.quest aside h4::before,
+.pf2e-km .journal-page-content section.quest aside p::before,
+.pf2e-km .journal-page-content section.quest aside .with-repost::before,
+.pf2e-km .journal-page-content section.quest aside .content-link::before,
+.pf2e-km .journal-page-content section.quest aside .inline-roll::before,
+.pf2e-km .journal-page-content section.quest aside .inline-check::before,
+.pf2e-km .journal-page-content section.quest aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.quest aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.quest aside .content-link > i::before,
+.pf2e-km .journal-page-content section.quest aside h1::after,
+.pf2e-km .journal-page-content section.quest aside h2::after,
+.pf2e-km .journal-page-content section.quest aside h3::after,
+.pf2e-km .journal-page-content section.quest aside h4::after,
+.pf2e-km .journal-page-content section.quest aside p::after,
+.pf2e-km .journal-page-content section.quest aside .with-repost::after,
+.pf2e-km .journal-page-content section.quest aside .content-link::after,
+.pf2e-km .journal-page-content section.quest aside .inline-roll::after,
+.pf2e-km .journal-page-content section.quest aside .inline-check::after,
+.pf2e-km .journal-page-content section.quest aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.quest aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.quest aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.quest aside .with-repost:hover,
+.pf2e-km .journal-page-content section.quest aside .content-link:hover,
+.pf2e-km .journal-page-content section.quest aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.quest aside .inline-check:hover,
+.pf2e-km .journal-page-content section.quest aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.quest aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.quest aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.quest aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.quest aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.quest aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.quest aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.quest aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.quest aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.quest aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.quest aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.quest aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.quest aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.quest aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.quest aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.quest aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.quest aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.quest aside.token > img,
+.pf2e-km .journal-page-content section.quest aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.quest aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.quest strong,
+.pf2e-km .journal-page-content section.quest ul.outcomes strong,
+.pf2e-km .journal-page-content section.quest h1,
+.pf2e-km .journal-page-content section.quest h2,
+.pf2e-km .journal-page-content section.quest h3,
+.pf2e-km .journal-page-content section.quest .with-repost,
+.pf2e-km .journal-page-content section.quest .content-link,
+.pf2e-km .journal-page-content section.quest .inline-roll,
+.pf2e-km .journal-page-content section.quest .inline-check,
+.pf2e-km .journal-page-content section.quest span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.quest .with-repost > i,
+.pf2e-km .journal-page-content section.quest .content-link > i,
+.pf2e-km .journal-page-content section.quest span.magic {
+  color: #461502;
+}
+.pf2e-km .journal-page-content section.quest strong::before,
+.pf2e-km .journal-page-content section.quest ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.quest h1::before,
+.pf2e-km .journal-page-content section.quest h2::before,
+.pf2e-km .journal-page-content section.quest h3::before,
+.pf2e-km .journal-page-content section.quest .with-repost::before,
+.pf2e-km .journal-page-content section.quest .content-link::before,
+.pf2e-km .journal-page-content section.quest .inline-roll::before,
+.pf2e-km .journal-page-content section.quest .inline-check::before,
+.pf2e-km .journal-page-content section.quest span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.quest .with-repost > i::before,
+.pf2e-km .journal-page-content section.quest .content-link > i::before,
+.pf2e-km .journal-page-content section.quest span.magic::before,
+.pf2e-km .journal-page-content section.quest strong::after,
+.pf2e-km .journal-page-content section.quest ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.quest h1::after,
+.pf2e-km .journal-page-content section.quest h2::after,
+.pf2e-km .journal-page-content section.quest h3::after,
+.pf2e-km .journal-page-content section.quest .with-repost::after,
+.pf2e-km .journal-page-content section.quest .content-link::after,
+.pf2e-km .journal-page-content section.quest .inline-roll::after,
+.pf2e-km .journal-page-content section.quest .inline-check::after,
+.pf2e-km .journal-page-content section.quest span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.quest .with-repost > i::after,
+.pf2e-km .journal-page-content section.quest .content-link > i::after,
+.pf2e-km .journal-page-content section.quest span.magic::after {
+  color: #461502;
+}
+.pf2e-km .journal-page-content section.quest .with-repost:hover,
+.pf2e-km .journal-page-content section.quest .content-link:hover,
+.pf2e-km .journal-page-content section.quest .inline-roll:hover,
+.pf2e-km .journal-page-content section.quest .inline-check:hover,
+.pf2e-km .journal-page-content section.quest span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.quest .with-repost > i:hover,
+.pf2e-km .journal-page-content section.quest .content-link > i:hover {
+  text-shadow: 0 0 10px white;
+}
+.pf2e-km .journal-page-content section.quest hr {
+  border-bottom: 1px #3b2200 solid;
+}
+.pf2e-km .journal-page-content section.quest > article,
+.pf2e-km .journal-page-content section.quest.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(160, 120, 50, 0.2) 5%, rgba(160, 120, 50, 0.2) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #3b2200;
+}
+.pf2e-km .journal-page-content section.quest header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.quest header h3 {
+  font-size: 1.4rem;
+}
+.pf2e-km .journal-page-content section.quest header h3::before {
+  content: url(assets/quest-icon.webp);
+  position: relative;
+  bottom: -2px;
+  padding: 2px;
+}
+.pf2e-km .journal-page-content section.quest header {
+  border-bottom: 1px solid #3b2200;
+}
+.pf2e-km .journal-page-content section.quest > p:only-child,
+.pf2e-km .journal-page-content section.quest article {
+  background: rgba(160, 120, 50, 0.2);
+  padding: 1px 0.5rem;
+}
+.pf2e-km .journal-page-content section.skill {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pf2e-km .journal-page-content section.skill header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #12682d;
+}
+.pf2e-km .journal-page-content section.skill header h1,
+.pf2e-km .journal-page-content section.skill header h2,
+.pf2e-km .journal-page-content section.skill header h3,
+.pf2e-km .journal-page-content section.skill header h4,
+.pf2e-km .journal-page-content section.skill header p,
+.pf2e-km .journal-page-content section.skill header .with-repost,
+.pf2e-km .journal-page-content section.skill header .content-link,
+.pf2e-km .journal-page-content section.skill header .inline-roll,
+.pf2e-km .journal-page-content section.skill header .inline-check,
+.pf2e-km .journal-page-content section.skill header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.skill header .with-repost > i,
+.pf2e-km .journal-page-content section.skill header .content-link > i {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.skill header h3,
+.pf2e-km .journal-page-content section.skill header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.skill header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.skill aside {
+  background: #587455;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.skill aside h1,
+.pf2e-km .journal-page-content section.skill aside h2,
+.pf2e-km .journal-page-content section.skill aside h3,
+.pf2e-km .journal-page-content section.skill aside h4,
+.pf2e-km .journal-page-content section.skill aside p,
+.pf2e-km .journal-page-content section.skill aside .with-repost,
+.pf2e-km .journal-page-content section.skill aside .content-link,
+.pf2e-km .journal-page-content section.skill aside .inline-roll,
+.pf2e-km .journal-page-content section.skill aside .inline-check,
+.pf2e-km .journal-page-content section.skill aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.skill aside .with-repost > i,
+.pf2e-km .journal-page-content section.skill aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.skill aside h1::before,
+.pf2e-km .journal-page-content section.skill aside h2::before,
+.pf2e-km .journal-page-content section.skill aside h3::before,
+.pf2e-km .journal-page-content section.skill aside h4::before,
+.pf2e-km .journal-page-content section.skill aside p::before,
+.pf2e-km .journal-page-content section.skill aside .with-repost::before,
+.pf2e-km .journal-page-content section.skill aside .content-link::before,
+.pf2e-km .journal-page-content section.skill aside .inline-roll::before,
+.pf2e-km .journal-page-content section.skill aside .inline-check::before,
+.pf2e-km .journal-page-content section.skill aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.skill aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.skill aside .content-link > i::before,
+.pf2e-km .journal-page-content section.skill aside h1::after,
+.pf2e-km .journal-page-content section.skill aside h2::after,
+.pf2e-km .journal-page-content section.skill aside h3::after,
+.pf2e-km .journal-page-content section.skill aside h4::after,
+.pf2e-km .journal-page-content section.skill aside p::after,
+.pf2e-km .journal-page-content section.skill aside .with-repost::after,
+.pf2e-km .journal-page-content section.skill aside .content-link::after,
+.pf2e-km .journal-page-content section.skill aside .inline-roll::after,
+.pf2e-km .journal-page-content section.skill aside .inline-check::after,
+.pf2e-km .journal-page-content section.skill aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.skill aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.skill aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.skill aside .with-repost:hover,
+.pf2e-km .journal-page-content section.skill aside .content-link:hover,
+.pf2e-km .journal-page-content section.skill aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.skill aside .inline-check:hover,
+.pf2e-km .journal-page-content section.skill aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.skill aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.skill aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.skill aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.skill aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.skill aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.skill aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.skill aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.skill aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.skill aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.skill aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.skill aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.skill aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.skill aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.skill aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.skill aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.skill aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.skill aside.token > img,
+.pf2e-km .journal-page-content section.skill aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.skill aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.skill strong,
+.pf2e-km .journal-page-content section.skill ul.outcomes strong,
+.pf2e-km .journal-page-content section.skill h1,
+.pf2e-km .journal-page-content section.skill h2,
+.pf2e-km .journal-page-content section.skill h3,
+.pf2e-km .journal-page-content section.skill .with-repost,
+.pf2e-km .journal-page-content section.skill .content-link,
+.pf2e-km .journal-page-content section.skill .inline-roll,
+.pf2e-km .journal-page-content section.skill .inline-check,
+.pf2e-km .journal-page-content section.skill span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.skill .with-repost > i,
+.pf2e-km .journal-page-content section.skill .content-link > i,
+.pf2e-km .journal-page-content section.skill span.magic {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.skill strong::before,
+.pf2e-km .journal-page-content section.skill ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.skill h1::before,
+.pf2e-km .journal-page-content section.skill h2::before,
+.pf2e-km .journal-page-content section.skill h3::before,
+.pf2e-km .journal-page-content section.skill .with-repost::before,
+.pf2e-km .journal-page-content section.skill .content-link::before,
+.pf2e-km .journal-page-content section.skill .inline-roll::before,
+.pf2e-km .journal-page-content section.skill .inline-check::before,
+.pf2e-km .journal-page-content section.skill span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.skill .with-repost > i::before,
+.pf2e-km .journal-page-content section.skill .content-link > i::before,
+.pf2e-km .journal-page-content section.skill span.magic::before,
+.pf2e-km .journal-page-content section.skill strong::after,
+.pf2e-km .journal-page-content section.skill ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.skill h1::after,
+.pf2e-km .journal-page-content section.skill h2::after,
+.pf2e-km .journal-page-content section.skill h3::after,
+.pf2e-km .journal-page-content section.skill .with-repost::after,
+.pf2e-km .journal-page-content section.skill .content-link::after,
+.pf2e-km .journal-page-content section.skill .inline-roll::after,
+.pf2e-km .journal-page-content section.skill .inline-check::after,
+.pf2e-km .journal-page-content section.skill span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.skill .with-repost > i::after,
+.pf2e-km .journal-page-content section.skill .content-link > i::after,
+.pf2e-km .journal-page-content section.skill span.magic::after {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.skill .with-repost:hover,
+.pf2e-km .journal-page-content section.skill .content-link:hover,
+.pf2e-km .journal-page-content section.skill .inline-roll:hover,
+.pf2e-km .journal-page-content section.skill .inline-check:hover,
+.pf2e-km .journal-page-content section.skill span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.skill .with-repost > i:hover,
+.pf2e-km .journal-page-content section.skill .content-link > i:hover {
+  text-shadow: 0 0 10px #587455;
+}
+.pf2e-km .journal-page-content section.skill hr {
+  border-bottom: 1px #12682d solid;
+}
+.pf2e-km .journal-page-content section.skill > article,
+.pf2e-km .journal-page-content section.skill.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 120, 60, 0.1) 5%, rgba(60, 120, 60, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #12682d;
+}
+.pf2e-km .journal-page-content section.skill header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.skill > p:only-child,
+.pf2e-km .journal-page-content section.skill > article:only-child,
+.pf2e-km .journal-page-content section.skill.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 120, 60, 0.1) 5%, rgba(60, 120, 60, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #12682d;
+  border-bottom: 1px solid #12682d;
+}
+.pf2e-km .journal-page-content section.skill > p:only-child {
+  padding: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.skill aside {
+  border-top: 1.75rem solid white;
+  border-image: url("assets/border-skill.webp") 100% 0 0 0/1.75rem 0 0 0/0 round;
+  margin-top: 3px;
+}
+.pf2e-km .journal-page-content section.treasure {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pf2e-km .journal-page-content section.treasure header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #655fa7;
+}
+.pf2e-km .journal-page-content section.treasure header h1,
+.pf2e-km .journal-page-content section.treasure header h2,
+.pf2e-km .journal-page-content section.treasure header h3,
+.pf2e-km .journal-page-content section.treasure header h4,
+.pf2e-km .journal-page-content section.treasure header p,
+.pf2e-km .journal-page-content section.treasure header .with-repost,
+.pf2e-km .journal-page-content section.treasure header .content-link,
+.pf2e-km .journal-page-content section.treasure header .inline-roll,
+.pf2e-km .journal-page-content section.treasure header .inline-check,
+.pf2e-km .journal-page-content section.treasure header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.treasure header .with-repost > i,
+.pf2e-km .journal-page-content section.treasure header .content-link > i {
+  color: #48438b;
+}
+.pf2e-km .journal-page-content section.treasure header h3,
+.pf2e-km .journal-page-content section.treasure header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.treasure header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.treasure aside {
+  background: #48438b;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.treasure aside h1,
+.pf2e-km .journal-page-content section.treasure aside h2,
+.pf2e-km .journal-page-content section.treasure aside h3,
+.pf2e-km .journal-page-content section.treasure aside h4,
+.pf2e-km .journal-page-content section.treasure aside p,
+.pf2e-km .journal-page-content section.treasure aside .with-repost,
+.pf2e-km .journal-page-content section.treasure aside .content-link,
+.pf2e-km .journal-page-content section.treasure aside .inline-roll,
+.pf2e-km .journal-page-content section.treasure aside .inline-check,
+.pf2e-km .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.treasure aside .with-repost > i,
+.pf2e-km .journal-page-content section.treasure aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.treasure aside h1::before,
+.pf2e-km .journal-page-content section.treasure aside h2::before,
+.pf2e-km .journal-page-content section.treasure aside h3::before,
+.pf2e-km .journal-page-content section.treasure aside h4::before,
+.pf2e-km .journal-page-content section.treasure aside p::before,
+.pf2e-km .journal-page-content section.treasure aside .with-repost::before,
+.pf2e-km .journal-page-content section.treasure aside .content-link::before,
+.pf2e-km .journal-page-content section.treasure aside .inline-roll::before,
+.pf2e-km .journal-page-content section.treasure aside .inline-check::before,
+.pf2e-km .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.treasure aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.treasure aside .content-link > i::before,
+.pf2e-km .journal-page-content section.treasure aside h1::after,
+.pf2e-km .journal-page-content section.treasure aside h2::after,
+.pf2e-km .journal-page-content section.treasure aside h3::after,
+.pf2e-km .journal-page-content section.treasure aside h4::after,
+.pf2e-km .journal-page-content section.treasure aside p::after,
+.pf2e-km .journal-page-content section.treasure aside .with-repost::after,
+.pf2e-km .journal-page-content section.treasure aside .content-link::after,
+.pf2e-km .journal-page-content section.treasure aside .inline-roll::after,
+.pf2e-km .journal-page-content section.treasure aside .inline-check::after,
+.pf2e-km .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.treasure aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.treasure aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.treasure aside .with-repost:hover,
+.pf2e-km .journal-page-content section.treasure aside .content-link:hover,
+.pf2e-km .journal-page-content section.treasure aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.treasure aside .inline-check:hover,
+.pf2e-km .journal-page-content section.treasure aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.treasure aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.treasure aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.treasure aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.treasure aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.treasure aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.treasure aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.treasure aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.treasure aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.treasure aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.treasure aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.treasure aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.treasure aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.treasure aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.treasure aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.treasure aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.treasure aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.treasure aside.token > img,
+.pf2e-km .journal-page-content section.treasure aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.treasure aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.treasure strong,
+.pf2e-km .journal-page-content section.treasure ul.outcomes strong,
+.pf2e-km .journal-page-content section.treasure h1,
+.pf2e-km .journal-page-content section.treasure h2,
+.pf2e-km .journal-page-content section.treasure h3,
+.pf2e-km .journal-page-content section.treasure .with-repost,
+.pf2e-km .journal-page-content section.treasure .content-link,
+.pf2e-km .journal-page-content section.treasure .inline-roll,
+.pf2e-km .journal-page-content section.treasure .inline-check,
+.pf2e-km .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.treasure .with-repost > i,
+.pf2e-km .journal-page-content section.treasure .content-link > i,
+.pf2e-km .journal-page-content section.treasure span.magic {
+  color: #48438b;
+}
+.pf2e-km .journal-page-content section.treasure strong::before,
+.pf2e-km .journal-page-content section.treasure ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.treasure h1::before,
+.pf2e-km .journal-page-content section.treasure h2::before,
+.pf2e-km .journal-page-content section.treasure h3::before,
+.pf2e-km .journal-page-content section.treasure .with-repost::before,
+.pf2e-km .journal-page-content section.treasure .content-link::before,
+.pf2e-km .journal-page-content section.treasure .inline-roll::before,
+.pf2e-km .journal-page-content section.treasure .inline-check::before,
+.pf2e-km .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.treasure .with-repost > i::before,
+.pf2e-km .journal-page-content section.treasure .content-link > i::before,
+.pf2e-km .journal-page-content section.treasure span.magic::before,
+.pf2e-km .journal-page-content section.treasure strong::after,
+.pf2e-km .journal-page-content section.treasure ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.treasure h1::after,
+.pf2e-km .journal-page-content section.treasure h2::after,
+.pf2e-km .journal-page-content section.treasure h3::after,
+.pf2e-km .journal-page-content section.treasure .with-repost::after,
+.pf2e-km .journal-page-content section.treasure .content-link::after,
+.pf2e-km .journal-page-content section.treasure .inline-roll::after,
+.pf2e-km .journal-page-content section.treasure .inline-check::after,
+.pf2e-km .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.treasure .with-repost > i::after,
+.pf2e-km .journal-page-content section.treasure .content-link > i::after,
+.pf2e-km .journal-page-content section.treasure span.magic::after {
+  color: #48438b;
+}
+.pf2e-km .journal-page-content section.treasure .with-repost:hover,
+.pf2e-km .journal-page-content section.treasure .content-link:hover,
+.pf2e-km .journal-page-content section.treasure .inline-roll:hover,
+.pf2e-km .journal-page-content section.treasure .inline-check:hover,
+.pf2e-km .journal-page-content section.treasure span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.treasure .with-repost > i:hover,
+.pf2e-km .journal-page-content section.treasure .content-link > i:hover {
+  text-shadow: 0 0 10px #48438b;
+}
+.pf2e-km .journal-page-content section.treasure hr {
+  border-bottom: 1px #655fa7 solid;
+}
+.pf2e-km .journal-page-content section.treasure > article,
+.pf2e-km .journal-page-content section.treasure.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 60, 140, 0.1) 5%, rgba(60, 60, 140, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #655fa7;
+}
+.pf2e-km .journal-page-content section.treasure header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.treasure > p:only-child,
+.pf2e-km .journal-page-content section.treasure > article:only-child,
+.pf2e-km .journal-page-content section.treasure.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 60, 140, 0.1) 5%, rgba(60, 60, 140, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #655fa7;
+  border-bottom: 1px solid #655fa7;
+}
+.pf2e-km .journal-page-content section.treasure > p:only-child {
+  padding: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.treasure aside {
+  border-top: 1.2rem solid white;
+  border-image: url(assets/border-treasure.webp) 100% 0 0 0/1.7rem 0 0 0/0 round;
+  margin-top: 3px;
+}
+.pf2e-km .journal-page-content section.milestone {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pf2e-km .journal-page-content section.milestone header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #4F4F4F;
+}
+.pf2e-km .journal-page-content section.milestone header h1,
+.pf2e-km .journal-page-content section.milestone header h2,
+.pf2e-km .journal-page-content section.milestone header h3,
+.pf2e-km .journal-page-content section.milestone header h4,
+.pf2e-km .journal-page-content section.milestone header p,
+.pf2e-km .journal-page-content section.milestone header .with-repost,
+.pf2e-km .journal-page-content section.milestone header .content-link,
+.pf2e-km .journal-page-content section.milestone header .inline-roll,
+.pf2e-km .journal-page-content section.milestone header .inline-check,
+.pf2e-km .journal-page-content section.milestone header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.milestone header .with-repost > i,
+.pf2e-km .journal-page-content section.milestone header .content-link > i {
+  color: #b5442a;
+}
+.pf2e-km .journal-page-content section.milestone header h3,
+.pf2e-km .journal-page-content section.milestone header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.milestone header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.milestone aside {
+  background: white;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.milestone aside h1,
+.pf2e-km .journal-page-content section.milestone aside h2,
+.pf2e-km .journal-page-content section.milestone aside h3,
+.pf2e-km .journal-page-content section.milestone aside h4,
+.pf2e-km .journal-page-content section.milestone aside p,
+.pf2e-km .journal-page-content section.milestone aside .with-repost,
+.pf2e-km .journal-page-content section.milestone aside .content-link,
+.pf2e-km .journal-page-content section.milestone aside .inline-roll,
+.pf2e-km .journal-page-content section.milestone aside .inline-check,
+.pf2e-km .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.milestone aside .with-repost > i,
+.pf2e-km .journal-page-content section.milestone aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.milestone aside h1::before,
+.pf2e-km .journal-page-content section.milestone aside h2::before,
+.pf2e-km .journal-page-content section.milestone aside h3::before,
+.pf2e-km .journal-page-content section.milestone aside h4::before,
+.pf2e-km .journal-page-content section.milestone aside p::before,
+.pf2e-km .journal-page-content section.milestone aside .with-repost::before,
+.pf2e-km .journal-page-content section.milestone aside .content-link::before,
+.pf2e-km .journal-page-content section.milestone aside .inline-roll::before,
+.pf2e-km .journal-page-content section.milestone aside .inline-check::before,
+.pf2e-km .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.milestone aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.milestone aside .content-link > i::before,
+.pf2e-km .journal-page-content section.milestone aside h1::after,
+.pf2e-km .journal-page-content section.milestone aside h2::after,
+.pf2e-km .journal-page-content section.milestone aside h3::after,
+.pf2e-km .journal-page-content section.milestone aside h4::after,
+.pf2e-km .journal-page-content section.milestone aside p::after,
+.pf2e-km .journal-page-content section.milestone aside .with-repost::after,
+.pf2e-km .journal-page-content section.milestone aside .content-link::after,
+.pf2e-km .journal-page-content section.milestone aside .inline-roll::after,
+.pf2e-km .journal-page-content section.milestone aside .inline-check::after,
+.pf2e-km .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.milestone aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.milestone aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.milestone aside .with-repost:hover,
+.pf2e-km .journal-page-content section.milestone aside .content-link:hover,
+.pf2e-km .journal-page-content section.milestone aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.milestone aside .inline-check:hover,
+.pf2e-km .journal-page-content section.milestone aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.milestone aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.milestone aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.milestone aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.milestone aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.milestone aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.milestone aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.milestone aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.milestone aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.milestone aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.milestone aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.milestone aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.milestone aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.milestone aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.milestone aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.milestone aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.milestone aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.milestone aside.token > img,
+.pf2e-km .journal-page-content section.milestone aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.milestone aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.milestone strong,
+.pf2e-km .journal-page-content section.milestone ul.outcomes strong,
+.pf2e-km .journal-page-content section.milestone h1,
+.pf2e-km .journal-page-content section.milestone h2,
+.pf2e-km .journal-page-content section.milestone h3,
+.pf2e-km .journal-page-content section.milestone .with-repost,
+.pf2e-km .journal-page-content section.milestone .content-link,
+.pf2e-km .journal-page-content section.milestone .inline-roll,
+.pf2e-km .journal-page-content section.milestone .inline-check,
+.pf2e-km .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.milestone .with-repost > i,
+.pf2e-km .journal-page-content section.milestone .content-link > i,
+.pf2e-km .journal-page-content section.milestone span.magic {
+  color: #b5442a;
+}
+.pf2e-km .journal-page-content section.milestone strong::before,
+.pf2e-km .journal-page-content section.milestone ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.milestone h1::before,
+.pf2e-km .journal-page-content section.milestone h2::before,
+.pf2e-km .journal-page-content section.milestone h3::before,
+.pf2e-km .journal-page-content section.milestone .with-repost::before,
+.pf2e-km .journal-page-content section.milestone .content-link::before,
+.pf2e-km .journal-page-content section.milestone .inline-roll::before,
+.pf2e-km .journal-page-content section.milestone .inline-check::before,
+.pf2e-km .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.milestone .with-repost > i::before,
+.pf2e-km .journal-page-content section.milestone .content-link > i::before,
+.pf2e-km .journal-page-content section.milestone span.magic::before,
+.pf2e-km .journal-page-content section.milestone strong::after,
+.pf2e-km .journal-page-content section.milestone ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.milestone h1::after,
+.pf2e-km .journal-page-content section.milestone h2::after,
+.pf2e-km .journal-page-content section.milestone h3::after,
+.pf2e-km .journal-page-content section.milestone .with-repost::after,
+.pf2e-km .journal-page-content section.milestone .content-link::after,
+.pf2e-km .journal-page-content section.milestone .inline-roll::after,
+.pf2e-km .journal-page-content section.milestone .inline-check::after,
+.pf2e-km .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.milestone .with-repost > i::after,
+.pf2e-km .journal-page-content section.milestone .content-link > i::after,
+.pf2e-km .journal-page-content section.milestone span.magic::after {
+  color: #b5442a;
+}
+.pf2e-km .journal-page-content section.milestone .with-repost:hover,
+.pf2e-km .journal-page-content section.milestone .content-link:hover,
+.pf2e-km .journal-page-content section.milestone .inline-roll:hover,
+.pf2e-km .journal-page-content section.milestone .inline-check:hover,
+.pf2e-km .journal-page-content section.milestone span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.milestone .with-repost > i:hover,
+.pf2e-km .journal-page-content section.milestone .content-link > i:hover {
+  text-shadow: 0 0 10px white;
+}
+.pf2e-km .journal-page-content section.milestone hr {
+  border-bottom: 1px #4F4F4F solid;
+}
+.pf2e-km .journal-page-content section.milestone > article,
+.pf2e-km .journal-page-content section.milestone.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(160, 99, 50, 0.1) 5%, rgba(160, 99, 50, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #4F4F4F;
+}
+.pf2e-km .journal-page-content section.milestone header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.milestone > p:only-child,
+.pf2e-km .journal-page-content section.milestone > article:only-child,
+.pf2e-km .journal-page-content section.milestone.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(160, 99, 50, 0.1) 5%, rgba(160, 99, 50, 0.1) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #4F4F4F;
+  border-bottom: 1px solid #4F4F4F;
+}
+.pf2e-km .journal-page-content section.milestone > p:only-child {
+  padding: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.milestone.head > p {
+  border-top: 0.75rem solid white;
+  border-bottom: 0.75rem solid white;
+  border-image: url(assets/border-milestone.webp) 100% 0/0.75rem 0/0 round;
+  padding: 0.75rem;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.pf2e-km .journal-page-content section.social {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.pf2e-km .journal-page-content section.social header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #12682d;
+}
+.pf2e-km .journal-page-content section.social header h1,
+.pf2e-km .journal-page-content section.social header h2,
+.pf2e-km .journal-page-content section.social header h3,
+.pf2e-km .journal-page-content section.social header h4,
+.pf2e-km .journal-page-content section.social header p,
+.pf2e-km .journal-page-content section.social header .with-repost,
+.pf2e-km .journal-page-content section.social header .content-link,
+.pf2e-km .journal-page-content section.social header .inline-roll,
+.pf2e-km .journal-page-content section.social header .inline-check,
+.pf2e-km .journal-page-content section.social header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.social header .with-repost > i,
+.pf2e-km .journal-page-content section.social header .content-link > i {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.social header h3,
+.pf2e-km .journal-page-content section.social header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.social header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.social aside {
+  background: #587455;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.social aside h1,
+.pf2e-km .journal-page-content section.social aside h2,
+.pf2e-km .journal-page-content section.social aside h3,
+.pf2e-km .journal-page-content section.social aside h4,
+.pf2e-km .journal-page-content section.social aside p,
+.pf2e-km .journal-page-content section.social aside .with-repost,
+.pf2e-km .journal-page-content section.social aside .content-link,
+.pf2e-km .journal-page-content section.social aside .inline-roll,
+.pf2e-km .journal-page-content section.social aside .inline-check,
+.pf2e-km .journal-page-content section.social aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.social aside .with-repost > i,
+.pf2e-km .journal-page-content section.social aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.social aside h1::before,
+.pf2e-km .journal-page-content section.social aside h2::before,
+.pf2e-km .journal-page-content section.social aside h3::before,
+.pf2e-km .journal-page-content section.social aside h4::before,
+.pf2e-km .journal-page-content section.social aside p::before,
+.pf2e-km .journal-page-content section.social aside .with-repost::before,
+.pf2e-km .journal-page-content section.social aside .content-link::before,
+.pf2e-km .journal-page-content section.social aside .inline-roll::before,
+.pf2e-km .journal-page-content section.social aside .inline-check::before,
+.pf2e-km .journal-page-content section.social aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.social aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.social aside .content-link > i::before,
+.pf2e-km .journal-page-content section.social aside h1::after,
+.pf2e-km .journal-page-content section.social aside h2::after,
+.pf2e-km .journal-page-content section.social aside h3::after,
+.pf2e-km .journal-page-content section.social aside h4::after,
+.pf2e-km .journal-page-content section.social aside p::after,
+.pf2e-km .journal-page-content section.social aside .with-repost::after,
+.pf2e-km .journal-page-content section.social aside .content-link::after,
+.pf2e-km .journal-page-content section.social aside .inline-roll::after,
+.pf2e-km .journal-page-content section.social aside .inline-check::after,
+.pf2e-km .journal-page-content section.social aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.social aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.social aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.social aside .with-repost:hover,
+.pf2e-km .journal-page-content section.social aside .content-link:hover,
+.pf2e-km .journal-page-content section.social aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.social aside .inline-check:hover,
+.pf2e-km .journal-page-content section.social aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.social aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.social aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.social aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.social aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.social aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.social aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.social aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.social aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.social aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.social aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.social aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.social aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.social aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.social aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.social aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.social aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.social aside.token > img,
+.pf2e-km .journal-page-content section.social aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.social aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.social strong,
+.pf2e-km .journal-page-content section.social ul.outcomes strong,
+.pf2e-km .journal-page-content section.social h1,
+.pf2e-km .journal-page-content section.social h2,
+.pf2e-km .journal-page-content section.social h3,
+.pf2e-km .journal-page-content section.social .with-repost,
+.pf2e-km .journal-page-content section.social .content-link,
+.pf2e-km .journal-page-content section.social .inline-roll,
+.pf2e-km .journal-page-content section.social .inline-check,
+.pf2e-km .journal-page-content section.social span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.social .with-repost > i,
+.pf2e-km .journal-page-content section.social .content-link > i,
+.pf2e-km .journal-page-content section.social span.magic {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.social strong::before,
+.pf2e-km .journal-page-content section.social ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.social h1::before,
+.pf2e-km .journal-page-content section.social h2::before,
+.pf2e-km .journal-page-content section.social h3::before,
+.pf2e-km .journal-page-content section.social .with-repost::before,
+.pf2e-km .journal-page-content section.social .content-link::before,
+.pf2e-km .journal-page-content section.social .inline-roll::before,
+.pf2e-km .journal-page-content section.social .inline-check::before,
+.pf2e-km .journal-page-content section.social span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.social .with-repost > i::before,
+.pf2e-km .journal-page-content section.social .content-link > i::before,
+.pf2e-km .journal-page-content section.social span.magic::before,
+.pf2e-km .journal-page-content section.social strong::after,
+.pf2e-km .journal-page-content section.social ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.social h1::after,
+.pf2e-km .journal-page-content section.social h2::after,
+.pf2e-km .journal-page-content section.social h3::after,
+.pf2e-km .journal-page-content section.social .with-repost::after,
+.pf2e-km .journal-page-content section.social .content-link::after,
+.pf2e-km .journal-page-content section.social .inline-roll::after,
+.pf2e-km .journal-page-content section.social .inline-check::after,
+.pf2e-km .journal-page-content section.social span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.social .with-repost > i::after,
+.pf2e-km .journal-page-content section.social .content-link > i::after,
+.pf2e-km .journal-page-content section.social span.magic::after {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.social .with-repost:hover,
+.pf2e-km .journal-page-content section.social .content-link:hover,
+.pf2e-km .journal-page-content section.social .inline-roll:hover,
+.pf2e-km .journal-page-content section.social .inline-check:hover,
+.pf2e-km .journal-page-content section.social span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.social .with-repost > i:hover,
+.pf2e-km .journal-page-content section.social .content-link > i:hover {
+  text-shadow: 0 0 10px #587455;
+}
+.pf2e-km .journal-page-content section.social hr {
+  border-bottom: 1px #12682d solid;
+}
+.pf2e-km .journal-page-content section.social > article,
+.pf2e-km .journal-page-content section.social.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 120, 60, 0.025) 5%, rgba(60, 120, 60, 0.025) 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #12682d;
+}
+.pf2e-km .journal-page-content section.social header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.social > p:only-child,
+.pf2e-km .journal-page-content section.social > article:only-child,
+.pf2e-km .journal-page-content section.social.mini {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(60, 120, 60, 0.025) 5%, rgba(60, 120, 60, 0.025) 95%, rgba(0, 0, 0, 0) 100%);
+  border-top: 1px solid #12682d;
+  border-bottom: 1px solid #12682d;
+}
+.pf2e-km .journal-page-content section.social > p:only-child {
+  padding: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.social article > ul {
+  padding-left: 0;
+}
+.pf2e-km .journal-page-content section.social aside > img {
+  min-width: 110%;
+  margin: -10% -5% 0 -5%;
+}
+.pf2e-km .journal-page-content section.stats {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  background: #ffffff5e;
+  border: 1px solid #87af94;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.pf2e-km .journal-page-content section.stats header {
+  border: unset;
+  margin: 0;
+  line-height: 26px;
+  border-bottom: 2px solid #87af94;
+}
+.pf2e-km .journal-page-content section.stats header h1,
+.pf2e-km .journal-page-content section.stats header h2,
+.pf2e-km .journal-page-content section.stats header h3,
+.pf2e-km .journal-page-content section.stats header h4,
+.pf2e-km .journal-page-content section.stats header p,
+.pf2e-km .journal-page-content section.stats header .with-repost,
+.pf2e-km .journal-page-content section.stats header .content-link,
+.pf2e-km .journal-page-content section.stats header .inline-roll,
+.pf2e-km .journal-page-content section.stats header .inline-check,
+.pf2e-km .journal-page-content section.stats header span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.stats header .with-repost > i,
+.pf2e-km .journal-page-content section.stats header .content-link > i {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.stats header h3,
+.pf2e-km .journal-page-content section.stats header p {
+  font-family: 'Good OT Cond Bold';
+  font-size: 22px;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.stats header h2 i {
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+.pf2e-km .journal-page-content section.stats aside {
+  background: #587455;
+  border: unset;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px inset #00000080;
+  display: flex;
+  flex-flow: column;
+  max-width: max-content;
+  min-width: max-content;
+}
+.pf2e-km .journal-page-content section.stats aside h1,
+.pf2e-km .journal-page-content section.stats aside h2,
+.pf2e-km .journal-page-content section.stats aside h3,
+.pf2e-km .journal-page-content section.stats aside h4,
+.pf2e-km .journal-page-content section.stats aside p,
+.pf2e-km .journal-page-content section.stats aside .with-repost,
+.pf2e-km .journal-page-content section.stats aside .content-link,
+.pf2e-km .journal-page-content section.stats aside .inline-roll,
+.pf2e-km .journal-page-content section.stats aside .inline-check,
+.pf2e-km .journal-page-content section.stats aside span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.stats aside .with-repost > i,
+.pf2e-km .journal-page-content section.stats aside .content-link > i {
+  text-shadow: unset;
+  color: white;
+}
+.pf2e-km .journal-page-content section.stats aside h1::before,
+.pf2e-km .journal-page-content section.stats aside h2::before,
+.pf2e-km .journal-page-content section.stats aside h3::before,
+.pf2e-km .journal-page-content section.stats aside h4::before,
+.pf2e-km .journal-page-content section.stats aside p::before,
+.pf2e-km .journal-page-content section.stats aside .with-repost::before,
+.pf2e-km .journal-page-content section.stats aside .content-link::before,
+.pf2e-km .journal-page-content section.stats aside .inline-roll::before,
+.pf2e-km .journal-page-content section.stats aside .inline-check::before,
+.pf2e-km .journal-page-content section.stats aside span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.stats aside .with-repost > i::before,
+.pf2e-km .journal-page-content section.stats aside .content-link > i::before,
+.pf2e-km .journal-page-content section.stats aside h1::after,
+.pf2e-km .journal-page-content section.stats aside h2::after,
+.pf2e-km .journal-page-content section.stats aside h3::after,
+.pf2e-km .journal-page-content section.stats aside h4::after,
+.pf2e-km .journal-page-content section.stats aside p::after,
+.pf2e-km .journal-page-content section.stats aside .with-repost::after,
+.pf2e-km .journal-page-content section.stats aside .content-link::after,
+.pf2e-km .journal-page-content section.stats aside .inline-roll::after,
+.pf2e-km .journal-page-content section.stats aside .inline-check::after,
+.pf2e-km .journal-page-content section.stats aside span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.stats aside .with-repost > i::after,
+.pf2e-km .journal-page-content section.stats aside .content-link > i::after {
+  color: white;
+}
+.pf2e-km .journal-page-content section.stats aside .with-repost:hover,
+.pf2e-km .journal-page-content section.stats aside .content-link:hover,
+.pf2e-km .journal-page-content section.stats aside .inline-roll:hover,
+.pf2e-km .journal-page-content section.stats aside .inline-check:hover,
+.pf2e-km .journal-page-content section.stats aside span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.stats aside .with-repost > i:hover,
+.pf2e-km .journal-page-content section.stats aside .content-link > i:hover {
+  text-shadow: 0 0 2px white;
+}
+.pf2e-km .journal-page-content section.stats aside h3 {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.stats aside h3 a.content-link i {
+  display: none;
+}
+.pf2e-km .journal-page-content section.stats aside > p {
+  margin: 0.2rem 0;
+}
+.pf2e-km .journal-page-content section.stats aside > p i.fas {
+  float: left;
+}
+.pf2e-km .journal-page-content section.stats aside > p i.fas.fa-comment-alt {
+  float: right;
+  margin-right: 8px;
+}
+.pf2e-km .journal-page-content section.stats aside ul {
+  z-index: 1;
+  margin: auto;
+  padding: 0;
+}
+.pf2e-km .journal-page-content section.stats aside ul li {
+  margin: 4px 0;
+}
+.pf2e-km .journal-page-content section.stats aside img {
+  z-index: 0;
+  max-width: 150px;
+}
+.pf2e-km .journal-page-content section.stats aside.wide img {
+  max-width: 200px;
+}
+.pf2e-km .journal-page-content section.stats aside.thin img {
+  max-width: 128px;
+}
+.pf2e-km .journal-page-content section.stats aside.token {
+  border-radius: 100px 100px 5px 5px;
+}
+.pf2e-km .journal-page-content section.stats aside.token.wide {
+  border-radius: 110px 110px 5px 5px;
+}
+.pf2e-km .journal-page-content section.stats aside.token.thin {
+  border-radius: 90px 90px 5px 5px;
+}
+.pf2e-km .journal-page-content section.stats aside.porthole {
+  border-radius: 100%;
+  border: none;
+}
+.pf2e-km .journal-page-content section.stats aside.token > img,
+.pf2e-km .journal-page-content section.stats aside.porthole > img {
+  pointer-events: none;
+}
+.pf2e-km .journal-page-content section.stats aside.clip {
+  clip-path: circle(35%);
+}
+.pf2e-km .journal-page-content section.stats strong,
+.pf2e-km .journal-page-content section.stats ul.outcomes strong,
+.pf2e-km .journal-page-content section.stats h1,
+.pf2e-km .journal-page-content section.stats h2,
+.pf2e-km .journal-page-content section.stats h3,
+.pf2e-km .journal-page-content section.stats .with-repost,
+.pf2e-km .journal-page-content section.stats .content-link,
+.pf2e-km .journal-page-content section.stats .inline-roll,
+.pf2e-km .journal-page-content section.stats .inline-check,
+.pf2e-km .journal-page-content section.stats span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.stats .with-repost > i,
+.pf2e-km .journal-page-content section.stats .content-link > i,
+.pf2e-km .journal-page-content section.stats span.magic {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.stats strong::before,
+.pf2e-km .journal-page-content section.stats ul.outcomes strong::before,
+.pf2e-km .journal-page-content section.stats h1::before,
+.pf2e-km .journal-page-content section.stats h2::before,
+.pf2e-km .journal-page-content section.stats h3::before,
+.pf2e-km .journal-page-content section.stats .with-repost::before,
+.pf2e-km .journal-page-content section.stats .content-link::before,
+.pf2e-km .journal-page-content section.stats .inline-roll::before,
+.pf2e-km .journal-page-content section.stats .inline-check::before,
+.pf2e-km .journal-page-content section.stats span[data-visibility]:not([data-visibility=all])::before,
+.pf2e-km .journal-page-content section.stats .with-repost > i::before,
+.pf2e-km .journal-page-content section.stats .content-link > i::before,
+.pf2e-km .journal-page-content section.stats span.magic::before,
+.pf2e-km .journal-page-content section.stats strong::after,
+.pf2e-km .journal-page-content section.stats ul.outcomes strong::after,
+.pf2e-km .journal-page-content section.stats h1::after,
+.pf2e-km .journal-page-content section.stats h2::after,
+.pf2e-km .journal-page-content section.stats h3::after,
+.pf2e-km .journal-page-content section.stats .with-repost::after,
+.pf2e-km .journal-page-content section.stats .content-link::after,
+.pf2e-km .journal-page-content section.stats .inline-roll::after,
+.pf2e-km .journal-page-content section.stats .inline-check::after,
+.pf2e-km .journal-page-content section.stats span[data-visibility]:not([data-visibility=all])::after,
+.pf2e-km .journal-page-content section.stats .with-repost > i::after,
+.pf2e-km .journal-page-content section.stats .content-link > i::after,
+.pf2e-km .journal-page-content section.stats span.magic::after {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.stats .with-repost:hover,
+.pf2e-km .journal-page-content section.stats .content-link:hover,
+.pf2e-km .journal-page-content section.stats .inline-roll:hover,
+.pf2e-km .journal-page-content section.stats .inline-check:hover,
+.pf2e-km .journal-page-content section.stats span[data-visibility]:not([data-visibility=all]):hover,
+.pf2e-km .journal-page-content section.stats .with-repost > i:hover,
+.pf2e-km .journal-page-content section.stats .content-link > i:hover {
+  text-shadow: 0 0 10px #587455;
+}
+.pf2e-km .journal-page-content section.stats hr {
+  border-bottom: 1px #87af94 solid;
+}
+.pf2e-km .journal-page-content section.stats > article,
+.pf2e-km .journal-page-content section.stats.background > p {
+  padding-top: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #ffffff5e 5%, #ffffff5e 95%, rgba(0, 0, 0, 0) 100%);
+  border-bottom: 1px solid #87af94;
+}
+.pf2e-km .journal-page-content section.stats header + ul.traits {
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.stats header {
+  text-transform: uppercase;
+  line-height: 1.3rem;
+}
+.pf2e-km .journal-page-content section.stats > p:only-child {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.pf2e-km .journal-page-content section.stats > p:not(:only-child) {
+  padding: 0;
+  margin: 0.25rem 0;
+}
+.pf2e-km.journal-sheet.journal-entry {
+  min-width: 60rem;
+}
+.pf2e-km.journal-sheet.journal-entry .journal-header {
+  background-image: url(assets/header-back.webp);
+  background-position: top center;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  z-index: 2;
+}
+.pf2e-km.journal-sheet.journal-entry .journal-header input.title {
+  background: transparent;
+  background-image: url(assets/header-input.webp);
+  background-size: cover;
+  background-position: bottom;
+  margin: 0 4.5rem;
+  padding: 0.4rem 1rem 0.6rem 1rem;
+  height: auto;
+  width: auto;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  border: none;
+  font-family: 'Taroca';
+  font-size: 1.8rem;
+  color: #004416;
+  text-overflow: ellipsis;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-content.editor-content figure.head img {
+  max-width: 700px;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-content.editor-content figure img {
+  max-width: 300px;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-content.editor-content aside img {
+  max-width: 128px;
+}
+.pf2e-km.journal-sheet.journal-entry-page,
+.pf2e-km.journal-sheet section.journal-entry-content {
+  min-width: 44rem;
+  border: unset;
+  z-index: 0;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-entry-pages,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-entry-pages {
+  margin: unset;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-entry-pages article.journal-entry-page.text,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-entry-pages article.journal-entry-page.text {
+  scroll-margin-top: 2.5rem;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-entry-pages div.scrollable,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-entry-pages div.scrollable {
+  padding: 2rem 0 0.5rem 0;
+  scrollbar-gutter: stable both-edges;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-entry-pages div.scrollable div.edit-container,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-entry-pages div.scrollable div.edit-container {
+  z-index: 5;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-entry-pages div.scrollable section.journal-page-content,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-entry-pages div.scrollable section.journal-page-content {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-header,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-header {
+  z-index: 1;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-header input,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-header input {
+  font-family: "Taroca", sans-serif;
+  color: #004416;
+  text-overflow: ellipsis;
+  border: none;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-header aside div.heading-level,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-header aside div.heading-level {
+  font-family: "Gin", sans-serif;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-header aside div.show-title,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-header aside div.show-title {
+  font-family: "Good OT", sans-serif;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header {
+  position: relative;
+  margin: auto;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h1,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h1,
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h2,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h2,
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h3,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h3 {
+  width: 100%;
+  margin: unset;
+  clear: both;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h1,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h1 {
+  font-family: 'Taroca';
+  color: #004416;
+  text-align: center;
+  border: unset;
+  margin: 0.5rem 0 1rem 0;
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h1::before,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h1::before {
+  content: "";
+  background: url(./assets/border.webp) center / cover repeat-x;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 60%;
+  opacity: 25%;
+  filter: drop-shadow(0px 0px 4px #004416);
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h1::after,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h1::after {
+  content: "";
+  background: url(./assets/border.webp) center / cover repeat-x;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  right: 60%;
+  opacity: 25%;
+  filter: drop-shadow(0px 0px 4px #004416);
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h2,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h2,
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h3,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h3 {
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  width: auto;
+  font-family: "Good OT Cond Bold";
+  text-transform: uppercase;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  color: #004416;
+  border-bottom: 2px solid #004416;
+}
+.pf2e-km.journal-sheet.journal-entry-page .journal-page-header h3,
+.pf2e-km.journal-sheet section.journal-entry-content .journal-page-header h3 {
+  color: #548433;
+  border-bottom: 2px solid #548433;
+}
+.pf2e-km.journal-sheet.journal-entry-page section.window-content,
+.pf2e-km.journal-sheet.journal-sheet section.journal-entry-content {
+  background-image: url(assets/page-back.webp);
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  color: white;
+  border: unset;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer {
+  padding: 0;
+  z-index: 2;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.next,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.next,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.previous,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.previous,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search a.action-button,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer a.action-button,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.create,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.create,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.lock-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.lock-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.view-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.view-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.toggle-search-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.toggle-search-mode,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search button.collapse-toggle,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer button.collapse-toggle {
+  margin: 0;
+  border: unset;
+  background: rgba(255, 255, 245, 0.75);
+  border-radius: 4px;
+  line-height: 28px;
+  height: 28px;
+  color: black;
+  padding: 0;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol search input,
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol footer input {
+  margin: 0;
+  border: unset;
+  background: rgba(255, 255, 245, 0.75);
+  border-radius: 4px;
+  line-height: 28px;
+  height: 28px;
+  color: black;
+  padding: 0.25rem 0.5rem;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol {
+  padding: 2rem 0 1rem 0;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page {
+  scroll-margin-top: 2rem;
+  line-height: 30px;
+  border: unset;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page span.page-title {
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page span.page-ownership {
+  width: 24px;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page span.page-ownership.observer {
+  color: #939393;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page span.page-ownership.none {
+  color: #7070CC;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page ol.headings {
+  display: none;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page.level1::before {
+  content: "";
+  background: url(assets/divider.webp) no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 0;
+  width: 100%;
+  height: 1rem;
+  margin: 0.25rem 0;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page.level1 span.page-title {
+  font-family: "Good OT Cond Bold", sans-serif;
+  font-size: 1.1rem;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page.level2 span.page-title {
+  text-indent: 0rem;
+  font-family: "Good OT", sans-serif;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol nav.toc > ol li.page.level3 span.page-title {
+  text-indent: 0.5rem;
+  font-family: "Good OT", sans-serif;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol:not(.collapsed) {
+  flex-basis: 16rem;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol:not(.collapsed) span.page-number {
+  color: transparent;
+  width: 24px;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol:not(.collapsed) .active span.page-number {
+  background-image: url(assets/toc-pointer.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol:not(.collapsed) .active + .active span.page-number {
+  background-image: unset;
+}
+.pf2e-km.journal-sheet.journal-entry aside.sidebar.journal-sidebar.flexcol.collapsed {
+  width: 2.75rem;
+}
+.pf2e-km.journal-sheet:not(.minimized) header.window-header {
+  background-image: url(assets/window-header.webp);
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  padding-bottom: 2px;
+  line-height: 2rem;
+  z-index: 3;
+  border: unset;
+  filter: drop-shadow(1px 1px 4px #150c0c);
+}
+.pf2e-km.journal-sheet:not(.minimized) header.window-header h4,
+.pf2e-km.journal-sheet:not(.minimized) header.window-header a {
+  text-shadow: 1px 2px 3px black;
+}
+.pf2e-km.journal-sheet.journal-entry section.window-content {
+  border: unset;
+  border-radius: unset;
+  position: relative;
+}
+.pf2e-km.journal-sheet.journal-entry section.window-content section.journal-entry-content::before {
+  content: "";
+  pointer-events: none;
+  background-image: url(assets/header-left.webp), url(assets/header-right.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 128px, 128px;
+  background-position: top left, top right;
+  z-index: 2;
+  width: auto;
+  width: -moz-available;
+  width: -webkit-fill-available;
+  height: 256px;
+  position: absolute;
+}
+.pf2e-km.journal-sheet.journal-entry aside.journal-sidebar:not(.collapsed) {
+  background-image: url(assets/toc-header.webp), url(assets/toc-bot.webp);
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  background-position: top, bottom;
+}
+.pf2e-km .journal-page-content .documenticon.h3 {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.pf2e-km .journal-page-content .documenticon:before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  font-family: "Font Awesome 6 Pro";
+  width: 1.25rem;
+  text-align: center;
+  font-size: medium;
+}
+.pf2e-km .journal-page-content .documenticon.scenes:before {
+  content: "\f279";
+}
+.pf2e-km .journal-page-content .documenticon.actors:before {
+  content: "\f007";
+}
+.pf2e-km .journal-page-content .documenticon.items:before {
+  content: "\f0f2";
+}
+.pf2e-km .journal-page-content .documenticon.tables:before {
+  content: "\f00b";
+}
+.pf2e-km .journal-page-content .documenticon.journals:before {
+  content: "\f518";
+}
+.pf2e-km .journal-page-content .documenticon.cards:before {
+  content: "\e3ed";
+}
+.pf2e-km .journal-page-content .documenticon.playlists:before {
+  content: "\f001";
+}
+.pf2e-km .journal-page-content .documenticon.macros:before {
+  content: "\f121";
+}
+.pf2e-km .journal-page-content .documenticon.all:before {
+  content: "\f558";
+}
+.pf2e-km .journal-page-content table {
+  border-top: unset;
+  border-bottom: unset;
+}
+.pf2e-km .journal-page-content table:not(.noborder) td + td {
+  border-left: 1px solid black;
+}
+.pf2e-km .journal-page-content table tr {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.pf2e-km .journal-page-content table tr td,
+.pf2e-km .journal-page-content table tr th {
+  min-width: 3rem;
+  padding: 0.25rem;
+}
+.pf2e-km .journal-page-content table thead {
+  border-top: unset;
+  border-bottom: unset;
+}
+.pf2e-km .journal-page-content table thead th,
+.pf2e-km .journal-page-content table thead th p {
+  font-size: 1rem;
+  font-family: "Roundest Bold";
+  background-color: #004416;
+  color: white;
+  text-align: left;
+}
+.pf2e-km .journal-page-content table thead th a,
+.pf2e-km .journal-page-content table thead th p a,
+.pf2e-km .journal-page-content table thead th a.inline-roll.roll,
+.pf2e-km .journal-page-content table thead th p a.inline-roll.roll {
+  color: white;
+}
+.pf2e-km .journal-page-content table thead th a i,
+.pf2e-km .journal-page-content table thead th p a i,
+.pf2e-km .journal-page-content table thead th a.inline-roll.roll i,
+.pf2e-km .journal-page-content table thead th p a.inline-roll.roll i {
+  color: white;
+}
+.pf2e-km .journal-page-content table tbody tr:nth-child(even) {
+  background-color: #e0d5be;
+}
+.pf2e-km .journal-page-content table tbody tr:nth-child(odd) {
+  background-color: #d9c4a7;
+}
+.pf2e-km .journal-page-content table tbody td {
+  font-family: "Good OT";
+}
+.pf2e-km .journal-page-content table.center1 tr :nth-child(1),
+.pf2e-km .journal-page-content table.center2 tr :nth-child(2),
+.pf2e-km .journal-page-content table.center3 tr :nth-child(3),
+.pf2e-km .journal-page-content table.center4 tr :nth-child(4),
+.pf2e-km .journal-page-content table.center5 tr :nth-child(5),
+.pf2e-km .journal-page-content table.centerall tr td,
+.pf2e-km .journal-page-content table.centerall tr th {
+  white-space: nowrap;
+  text-align: center;
+}
+.pf2e-km .journal-page-content table.center1 tr :nth-child(1) p,
+.pf2e-km .journal-page-content table.center2 tr :nth-child(2) p,
+.pf2e-km .journal-page-content table.center3 tr :nth-child(3) p,
+.pf2e-km .journal-page-content table.center4 tr :nth-child(4) p,
+.pf2e-km .journal-page-content table.center5 tr :nth-child(5) p,
+.pf2e-km .journal-page-content table.centerall tr td p,
+.pf2e-km .journal-page-content table.centerall tr th p {
+  text-align: center;
+}
+.pf2e-km .journal-page-content table.mid {
+  width: 80%;
+  margin: auto;
+}
+.pf2e-km .journal-page-content table.thin {
+  table-layout: fixed;
+}
+.pf2e-km .journal-page-content table.thin th,
+.pf2e-km .journal-page-content table.thin td {
+  max-width: 100px;
+}
+.pf2e-km .journal-page-content table.static tr > :first-child {
+  width: 170px;
+}
+.pf2e-km .journal-page-content > aside,
+.pf2e-km .journal-page-content section.spotlight > aside {
+  border-top: 0.5rem solid white;
+  border-bottom: 0.5rem solid white;
+  border-image: url(assets/border-aside.webp) 94% 0/1rem 0/0 repeat;
+  background-color: #d9c4a7;
+  border-radius: 8px;
+  padding: 0.1rem 0.7rem;
+  margin: 1rem 0;
+}
+.pf2e-km .journal-page-content > aside h3,
+.pf2e-km .journal-page-content section.spotlight > aside h3 {
+  text-align: center;
+  font-family: "Roundest Bold";
+  font-size: 1.1rem;
+  color: #004416;
+  margin: 0.25rem 0 -0.25rem 0;
+}
+.pf2e-km .journal-page-content > aside.left p,
+.pf2e-km .journal-page-content section.spotlight > aside.left p,
+.pf2e-km .journal-page-content > aside.right p,
+.pf2e-km .journal-page-content section.spotlight > aside.right p,
+.pf2e-km .journal-page-content > aside.left li,
+.pf2e-km .journal-page-content section.spotlight > aside.left li,
+.pf2e-km .journal-page-content > aside.right li,
+.pf2e-km .journal-page-content section.spotlight > aside.right li {
+  font-family: "Good OT Cond";
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content > aside ul,
+.pf2e-km .journal-page-content section.spotlight > aside ul {
+  padding: unset;
+  margin: 0.25rem 0;
+  line-height: 1.2rem;
+}
+.pf2e-km .journal-page-content > aside hr,
+.pf2e-km .journal-page-content section.spotlight > aside hr {
+  background: repeat-x center / auto 12px url(assets/border-hr.webp);
+  border: unset;
+  height: 100%;
+  width: 100%;
+  min-height: 8px;
+}
+.pf2e-km .journal-page-content .left {
+  float: left;
+  margin: 0 0.75rem 0 0;
+  clear: left;
+}
+.pf2e-km .journal-page-content .right {
+  float: right;
+  margin: 0 0 0 0.75rem;
+  clear: right;
+}
+.pf2e-km .journal-page-content .left,
+.pf2e-km .journal-page-content .right {
+  max-width: 350px;
+  padding: 0.5rem;
+}
+.pf2e-km .journal-page-content .left > h3,
+.pf2e-km .journal-page-content .right > h3 {
+  text-align: center;
+  font-family: "Roundest Bold";
+  margin: 0 0 -8px 0;
+  font-size: 1rem;
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.fvtt {
+  padding: 0 0.5rem;
+  background-color: #ffffff50;
+  border: 1px #d0550d solid;
+  border-radius: 8px;
+}
+.pf2e-km .journal-page-content section.fvtt.thin {
+  max-width: 250px;
+}
+.pf2e-km .journal-page-content section.fvtt.right,
+.pf2e-km .journal-page-content section.fvtt.left {
+  min-width: 250px;
+}
+.pf2e-km .journal-page-content section.fvtt header {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 1.5rem;
+  border-bottom: 1px solid #d0550d;
+}
+.pf2e-km .journal-page-content section.fvtt header p:first-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.pf2e-km .journal-page-content section.fvtt header > p,
+.pf2e-km .journal-page-content section.fvtt strong,
+.pf2e-km .journal-page-content section.fvtt .with-repost,
+.pf2e-km .journal-page-content section.fvtt .content-link,
+.pf2e-km .journal-page-content section.fvtt .inline-roll,
+.pf2e-km .journal-page-content section.fvtt .inline-check,
+.pf2e-km .journal-page-content section.fvtt span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.fvtt .with-repost > i,
+.pf2e-km .journal-page-content section.fvtt .content-link > i,
+.pf2e-km .journal-page-content section.fvtt h4,
+.pf2e-km .journal-page-content section.fvtt ::marker {
+  color: #d0550d;
+}
+.pf2e-km .journal-page-content section.fvtt header > h4 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+.pf2e-km .journal-page-content section.fvtt.green {
+  border-color: #004416;
+}
+.pf2e-km .journal-page-content section.fvtt.green header {
+  border-color: #004416;
+}
+.pf2e-km .journal-page-content section.fvtt.green header > p,
+.pf2e-km .journal-page-content section.fvtt.green strong,
+.pf2e-km .journal-page-content section.fvtt.green .with-repost,
+.pf2e-km .journal-page-content section.fvtt.green .content-link,
+.pf2e-km .journal-page-content section.fvtt.green .inline-roll,
+.pf2e-km .journal-page-content section.fvtt.green .inline-check,
+.pf2e-km .journal-page-content section.fvtt.green span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.fvtt.green .with-repost > i,
+.pf2e-km .journal-page-content section.fvtt.green .content-link > i,
+.pf2e-km .journal-page-content section.fvtt.green h4 {
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.fvtt .visibility header > p,
+.pf2e-km .journal-page-content section.fvtt .visibility strong,
+.pf2e-km .journal-page-content section.fvtt .visibility .with-repost,
+.pf2e-km .journal-page-content section.fvtt .visibility .content-link,
+.pf2e-km .journal-page-content section.fvtt .visibility .inline-roll,
+.pf2e-km .journal-page-content section.fvtt .visibility .inline-check,
+.pf2e-km .journal-page-content section.fvtt .visibility span[data-visibility]:not([data-visibility=all]),
+.pf2e-km .journal-page-content section.fvtt .visibility .with-repost > i,
+.pf2e-km .journal-page-content section.fvtt .visibility .content-link > i,
+.pf2e-km .journal-page-content section.fvtt .visibility h4 {
+  color: #28005c;
+}
+.pf2e-km .journal-page-content section.fvtt .visibility:before {
+  content: "\f06e";
+  font: var(--fa-font-solid);
+  color: #28005c;
+  display: inline-block;
+  font-family: "Font Awesome 6 Pro";
+  padding-right: 0.25rem;
+}
+.pf2e-km .journal-page-content section.legend {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.pf2e-km .journal-page-content section.legend div {
+  flex: 0 0 45%;
+  justify-content: space-around;
+  display: flex;
+}
+.pf2e-km .journal-page-content section.legend p {
+  flex: 1;
+  text-align: left;
+}
+.pf2e-km .journal-page-content section.legend img {
+  filter: invert();
+  flex: 0 0 24px;
+  text-align: right;
+  padding-right: 2px;
+}
+.pf2e-km .journal-page-content section.legend .caption {
+  text-align: center;
+}
+.pf2e-km .journal-page-content section.dialogue {
+  text-indent: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.pf2e-km .journal-page-content section.dialogue :not(strong) {
+  color: #424242;
+}
+.pf2e-km .journal-page-content dl.list dt {
+  float: left;
+  height: 2rem;
+  z-index: 1;
+  margin: 0;
+}
+.pf2e-km .journal-page-content dl.list dd {
+  overflow: auto;
+  height: 2rem;
+  z-index: 0;
+  margin: 0;
+}
+.pf2e-km .journal-page-content dl.list dd p {
+  text-align: right;
+}
+.pf2e-km .journal-page-content dl.list p {
+  margin: 6px 0.5rem;
+}
+.pf2e-km .journal-page-content dl.list > :nth-child(4n-2),
+.pf2e-km .journal-page-content dl.list > :nth-child(4n-3) {
+  background: #d2c3aa85;
+}
+.pf2e-km .journal-page-content section.handwritten {
+  background-image: url("./assets/letter.webp");
+  background-size: 100% 100%;
+  filter: drop-shadow(0 0 4px);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.pf2e-km .journal-page-content section.handwritten.tall {
+  background-image: url("./assets/noteback-tall.webp");
+}
+.pf2e-km .journal-page-content section.handwritten.wide {
+  background-image: url("./assets/noteback-wide.webp");
+}
+.pf2e-km .journal-page-content section.handwritten p {
+  font-family: "La Belle Aurore";
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+  color: #5e1100e3;
+}
+.pf2e-km .journal-page-content section.handwritten .letter-textblock {
+  display: block;
+  padding-right: 6rem;
+  border: 2px solid #7a0303;
+  padding: 15px;
+}
+.pf2e-km .journal-page-content section.handwritten .letter-textblock span.dropcap {
+  font: 8rem "Gloucester Initialen", sans-serif;
+  float: left;
+  margin: -10px 5px -10px 0px;
+  color: #7a0303;
+}
+.pf2e-km .journal-page-content section.handwritten .letter-textblock.formal p {
+  font-family: "Prince Valiant", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.6rem;
+  color: #3b2200;
+  text-shadow: 0 0 black;
+}
+.pf2e-km .journal-page-content section.handwritten .letter-textblock figure.seal img {
+  width: 100px;
+  margin: 20px auto;
+}
+.pf2e-km .journal-page-content section.handwritten .letter-textblock p.signature {
+  font-family: "Meddon", script;
+}
+.pf2e-km .journal-page-content section.secret {
+  margin: 0.5rem 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) -5%, rgba(120, 50, 160, 0.1) 10% 90%, rgba(0, 0, 0, 0) 105%);
+  border-top: 1px #4F4F4F solid;
+  border-bottom: 1px #4F4F4F solid;
+  padding: 0.5rem;
+}
+.pf2e-km .journal-page-content section.secret strong,
+.pf2e-km .journal-page-content section.secret h3 {
+  color: #441239;
+}
+.pf2e-km .journal-page-content section.secret h3 {
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.secret button {
+  height: 1.5rem;
+  position: absolute;
+  margin: unset;
+}
+.pf2e-km .journal-page-content section.secret.revealed {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) -5%, rgba(50, 100, 160, 0.1) 10% 90%, rgba(0, 0, 0, 0) 105%);
+}
+.pf2e-km .journal-page-content p.bio {
+  font-family: "Good OT Italic";
+  font-size: 1.1rem;
+  color: #004416;
+}
+.pf2e-km .journal-page-content section.spotlight {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.pf2e-km .journal-page-content section.spotlight .flexfill {
+  flex: 1 1 100%;
+}
+.pf2e-km .journal-page-content section.spotlight .flex70 {
+  flex: 1 0 70%;
+}
+.pf2e-km .journal-page-content section.spotlight .flex50 {
+  flex: 1 0 50%;
+}
+.pf2e-km .journal-page-content section.spotlight .flex40 {
+  flex: 1 0 40%;
+}
+.pf2e-km .journal-page-content section.spotlight .flex30 {
+  flex: 1 0 30%;
+}
+.pf2e-km .journal-page-content section.spotlight .thin {
+  flex: 0 0 180px;
+}
+.pf2e-km .journal-page-content section.spotlight > p,
+.pf2e-km .journal-page-content section.spotlight article,
+.pf2e-km .journal-page-content section.spotlight table {
+  flex: 1 1 60%;
+}
+.pf2e-km .journal-page-content section.spotlight aside,
+.pf2e-km .journal-page-content section.spotlight figure {
+  flex: 1 1 40%;
+}
+.pf2e-km .journal-page-content section.spotlight figure.round img {
+  border-radius: 25%;
+}
+.pf2e-km .journal-page-content section.spotlight.half > * {
+  flex: 1 1 50%;
+}
+.pf2e-km .journal-page-content section.spotlight.baseline {
+  place-items: baseline;
+}
+.pf2e-km .journal-page-content section.block {
+  box-shadow: 0px 0px 8px 1px #2772343b inset;
+  border-radius: 0;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+}
+.pf2e-km .journal-page-content section.block img {
+  filter: drop-shadow(0px 0px 4px 0px #004416);
+}
+.pf2e-km .journal-page-content section.block > h3,
+.pf2e-km .journal-page-content section.block > header {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #548433;
+}
+.pf2e-km .journal-page-content section.block > h3 h3,
+.pf2e-km .journal-page-content section.block > header h3 {
+  border: unset;
+}
+.pf2e-km .journal-page-content section.block header {
+  margin: 0;
+}
+.pf2e-km .journal-page-content section.block p:first-child,
+.pf2e-km .journal-page-content section.block h3:first-child {
+  margin-top: 0rem;
+}
+.pf2e-km .journal-page-content section.block p:last-child {
+  margin-bottom: 0rem;
+}
+.pf2e-km .journal-page-content section.block:first-child {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+.pf2e-km .journal-page-content section.block:last-child {
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+.pf2e-km .journal-page-content article.blockgroup.icons figure {
+  flex: 0 0 128px;
+}
+.pf2e-km .journal-page-content article.blockgroup.icons figure img {
+  border-radius: 5%;
+}
+.pf2e-km .journal-page-content article.blockgroup.iconsarray header {
+  align-items: center;
+}
+.pf2e-km .journal-page-content article.blockgroup.iconsarray header figure {
+  display: flex;
+  gap: 0.25rem;
+  width: 40px;
+  justify-content: flex-end;
+}
+.pf2e-km .journal-page-content article.blockgroup.iconsarray header figure img {
+  border-radius: 30%;
+}
+.pf2e-km .journal-page-content .center {
+  text-align: center;
+}
+.pf2e-km .journal-page-content ul > p,
+.pf2e-km .journal-page-content table p {
+  margin: 0;
+}
+.pf2e-km .journal-page-content ul.outcomes strong,
+.pf2e-km .journal-page-content section.event strong {
+  color: #004416;
+}
+.pf2e-km .journal-page-content ul.outcomes hr,
+.pf2e-km .journal-page-content section.event hr {
+  border-color: #548433;
+}
+.pf2e-km .journal-page-content ul.outcomes {
+  padding: 0 0.5rem;
+}
+.pf2e-km .journal-page-content ul.outcomes p {
+  margin: 0.25rem 0;
+}
+.pf2e-km .journal-page-content ul.outcomes li {
+  padding: 0 0 0 0.25rem;
+}
+.pf2e-km .journal-page-content ul.traits {
+  list-style-type: none;
+  display: flex;
+  gap: 0.2rem;
+  margin: unset;
+}
+.pf2e-km .journal-page-content ul.traits li {
+  border-left: 3px solid #d8c483;
+  border-right: 3px solid #d8c483;
+  background: #548433;
+  color: white;
+  padding: 2px 6px 1px 6px;
+  text-transform: uppercase;
+  font-family: 'Good OT Cond Bold';
+  max-height: 24px;
+}
+.pf2e-km .journal-page-content ul.traits li.rarity {
+  background: #662288;
+}
+.pf2e-km .journal-page-content ul.traits li.alignment {
+  background: #446699;
+}
+.pf2e-km .journal-page-content ul.traits li.size {
+  background: #004416;
+}
+.pf2e-km .journal-page-content ul.traits li.rarity-unique {
+  background: #800080;
+}
+.pf2e-km .journal-page-content ul.traits li.rarity-rare {
+  background: #0c1466;
+}
+.pf2e-km .journal-page-content ul.traits li.rarity-uncommon {
+  background: #c45500;
+}
+.pf2e-km .journal-page-content > ul.traits:first-child {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  text-align: right;
+  margin: unset;
+  text-transform: uppercase;
+}
+.pf2e-km .journal-page-content > .subtitle:first-child {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  text-align: right;
+  margin: unset;
+  text-transform: uppercase;
+}
+.pf2e-km .journal-page-content .split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.pf2e-km .journal-page-content .split h1,
+.pf2e-km .journal-page-content .split h2,
+.pf2e-km .journal-page-content .split h3,
+.pf2e-km .journal-page-content .split h4,
+.pf2e-km .journal-page-content .split p {
+  margin: unset;
+}
+.pf2e-km .journal-page-content .split ul {
+  margin: auto 0;
+}
+.pf2e-km .journal-page-content hr {
+  border-top: none;
+  border-bottom: 1px #548433 solid;
+}
+.pf2e-km .journal-page-content .underlined {
+  border-bottom: 1px solid #004416;
+}
+.pf2e-km .journal-page-content h2.underlined {
+  border-bottom: 2px solid #004416;
+  padding-bottom: 2px;
+}
+.pf2e-km .journal-page-content header {
+  margin-bottom: 0.5rem;
+}
+.pf2e-km .journal-page-content header.underlined {
+  border-bottom: 2px solid #004416;
+}
+.pf2e-km .journal-page-content header.underlined h1,
+.pf2e-km .journal-page-content header.underlined h2,
+.pf2e-km .journal-page-content header.underlined h3,
+.pf2e-km .journal-page-content header.underlined h4,
+.pf2e-km .journal-page-content header.underlined p {
+  margin: 0;
+}
+.pf2e-km .journal-page-content .clear {
+  clear: both;
+}
+.pf2e-km .journal-page-content hr.clear {
+  border: none;
+  margin: unset;
+}
+.pf2e-km .journal-page-content .noclear {
+  clear: none;
+  overflow: auto;
+}
+.pf2e-km .journal-page-content figure img {
+  filter: drop-shadow(0px 0px 5px #f0c492);
+}
+.pf2e-km .journal-page-content figure.head img {
+  filter: drop-shadow(0px 0px 5px #004416);
+}
+.pf2e-km .journal-page-content figure {
+  margin: unset;
+}
+.pf2e-km .journal-page-content figure.round img {
+  border-radius: 50%;
+}
+.pf2e-km .journal-page-content figure.balance img {
+  margin: auto;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.pf2e-km .journal-page-content figure figcaption {
+  font-size: 1rem;
+  font-family: "Roundest Bold";
+}
+.pf2e-km .journal-page-content figure.head {
+  margin: 1rem 0;
+}
+.pf2e-km .journal-page-content figure.head img {
+  border-radius: 10px;
+}
+.pf2e-km .journal-page-content figure.right,
+.pf2e-km .journal-page-content figure.left {
+  padding: 0;
+}
+.pf2e-km .journal-page-content img {
+  border: unset;
+}
+.pf2e-km .journal-page-content img.flip {
+  transform: scaleX(-1);
+}
+.pf2e-km .journal-page-content img.scale150 {
+  min-width: 150%;
+  margin: -25%;
+  -webkit-mask-image: radial-gradient(black 50%, transparent 60%);
+  mask-image: radial-gradient(black 50%, transparent 60%);
+}
+.pf2e-km .journal-page-content img.scale200 {
+  min-width: 200%;
+  margin: -50%;
+  -webkit-mask-image: radial-gradient(black 45%, transparent 50%);
+  mask-image: radial-gradient(black 45%, transparent 50%);
+}
+.pf2e-km .journal-page-content .logo img {
+  filter: drop-shadow(1px 2px 2px black);
+  display: block;
+  max-width: 400px;
+  margin: auto;
+}
+.pf2e-km .journal-page-content section.description,
+section#chat li.chat-message section.description,
+div#chat-notifications li.chat-message section.description {
+  position: relative;
+  margin: 0.6rem 0;
+}
+.pf2e-km .journal-page-content section.description p,
+section#chat li.chat-message section.description p,
+div#chat-notifications li.chat-message section.description p {
+  margin: 8px 0;
+  overflow: auto;
+  color: #9d4433;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.pf2e-km .journal-page-content section.description p:not(:first-child),
+section#chat li.chat-message section.description p:not(:first-child),
+div#chat-notifications li.chat-message section.description p:not(:first-child) {
+  text-indent: 1.2rem;
+}
+.pf2e-km .journal-page-content section.description p:first-of-type,
+section#chat li.chat-message section.description p:first-of-type,
+div#chat-notifications li.chat-message section.description p:first-of-type {
+  border-top: 1px solid #9d4433;
+  padding-top: 8px;
+}
+.pf2e-km .journal-page-content section.description p:last-of-type,
+section#chat li.chat-message section.description p:last-of-type,
+div#chat-notifications li.chat-message section.description p:last-of-type {
+  border-bottom: 1px solid #9d4433;
+  padding-bottom: 7px;
+}
+.pf2e-km .journal-page-content span.flavor-text div.page,
+section#chat li.chat-message span.flavor-text div.page,
+div#chat-notifications li.chat-message span.flavor-text div.page {
+  width: 100%;
+  background: none;
+  outline: none;
+  height: 2.25rem;
+}
+.pf2e-km .journal-page-content span.flavor-text div.page a.content-link,
+section#chat li.chat-message span.flavor-text div.page a.content-link,
+div#chat-notifications li.chat-message span.flavor-text div.page a.content-link {
+  text-align: center;
+  border-radius: 4px;
+  line-height: 1.5rem;
+  display: block;
+  border: 1px solid #a59999;
+}
+.pf2e-km .journal-page-content span.flavor-text div.page a.content-link:active,
+section#chat li.chat-message span.flavor-text div.page a.content-link:active,
+div#chat-notifications li.chat-message span.flavor-text div.page a.content-link:active {
+  background: #c9c4c4;
+}
+.pf2e-km .journal-page-content section.description.readout .readoutbutton,
+section#chat li.chat-message section.description.readout .readoutbutton,
+div#chat-notifications li.chat-message section.description.readout .readoutbutton {
+  content: "\f27a";
+  font: normal normal normal 18px/1 FontAwesome;
+  cursor: pointer;
+  color: #7a0303;
+  position: absolute;
+  right: -1.5rem;
+  padding: 0.5rem;
+  visibility: hidden;
+}
+.pf2e-km .journal-page-content section.description.readout:hover .readoutbutton {
+  visibility: initial;
+}

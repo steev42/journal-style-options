@@ -1,0 +1,2 @@
+var e=`journal-style-options`,t=[{id:`pf2e-av`,label:`Abomination Vaults`},{id:`pf2e-km`,label:`Kingmaker`}];function n(e){return class extends foundry.applications.sheets.journal.JournalEntrySheet{static get DEFAULT_OPTIONS(){return{classes:[e]}}}}Hooks.once(`init`,()=>{console.log(`Initializing ${e}`);for(let{id:e,label:r}of t){let t=n(e);foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntry,e,t,{types:[`base`],label:r,makeDefault:!1})}});
+//# sourceMappingURL=module.js.map

@@ -1,0 +1,18 @@
+{
+ "id": "journal-style-options",
+ "title": "Journal Style Options",
+ "description": "This module provides a set of options for customizing the appearance of journal entries in Foundry VTT, primarily based on existing APs",
+ "authors": [
+   {
+     "name": "E. Steev Ramsdell",
+     "email": "steev@2d12.com"
+   }
+ ],
+ "version": "1.0.0",
+ "compatibility": {
+   "minimum": "13",
+   "verified": "13"
+ },
+ "esmodules": ["scripts/module.js"],
+ "styles": ["styles/pf2e-km.css", "styles/pf2e-av.css"]
+}
