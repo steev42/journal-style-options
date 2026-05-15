@@ -270,6 +270,7 @@
             border-image: url("assets/border-encounter.webp") 100% 0 100% 0/1.25rem 0 1.25rem 0/0 repeat;
         }
     }
+
     section.quest {
         .sectiontypemixin(quest);
         header h3 {
@@ -326,9 +327,16 @@
         article>ul {
             padding-left: 0;
         }
-        aside>img {
-            min-width: 110%;
-            margin: -10% -5% 0 -5%;
+    }
+    
+    aside.social, section.social aside, section.social.mini aside {
+        .asidetypemixin(social);
+        border-bottom: 1rem solid white;
+        border-image: url("assets/border-encounter.webp") 0 0 100% 0/0 0 1.75rem 0/0 repeat;
+        &.noimage {
+            border-top: 1.75rem solid white;
+            min-width: 180px;
+            border-image: url("assets/border-encounter.webp") 100% 0 100% 0/1.75rem 0 1.75rem 0/0 repeat;
         }
     }
     section.stats {

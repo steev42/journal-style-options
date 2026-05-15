@@ -5,12 +5,12 @@
    ],
    "target": "ESNext",
    "useDefineForClassFields": true,
-   "module": "node16",
+   "module": "esnext",
    "lib": [
      "ESNext",
      "DOM"
    ],
-   "moduleResolution": "node16",
+   "moduleResolution": "bundler",
    "strict": true,
    "sourceMap": true,
    "resolveJsonModule": true,

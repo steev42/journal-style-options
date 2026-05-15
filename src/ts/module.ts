@@ -1,4 +1,11 @@
-import { id as moduleId } from "../module.json";
+import moduleData from "../module.json" with {type: "json"};
+const moduleId = moduleData.id;
+
+declare module "fvtt-types/configuration" {
+  interface SettingConfig {
+    "journal-style-options.descriptiveTextButton": boolean
+  }
+}
 
 const journalSheetDefinitions = [
   { "id": "pf2e-av", "label": "Abomination Vaults"},
@@ -16,6 +23,16 @@ function makeJournalSheet(cssClass: string) {
 Hooks.once("init", () => {
   console.log(`Initializing ${moduleId}`);
 
+    // Allow disabling of the "send to chat" button
+  game.settings?.register(moduleId as any, "descriptiveTextButton", {
+      name: "\"Send To Chat\" button",
+      hint: "Add a button to journals that will send \"section\" tags with the \"description\" class to chat.",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: true
+  });
+  
   for (const { id, label } of journalSheetDefinitions) {
     const sheetClass = makeJournalSheet(id);
     foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntry, id, sheetClass, {
@@ -23,8 +40,7 @@ Hooks.once("init", () => {
       label: label,
       makeDefault: false
     });
-  }
-  
+  }  
 });
 
 function postDescToChat(description: HTMLElement, page: JournalEntryPage) {
@@ -41,19 +57,22 @@ function postDescToChat(description: HTMLElement, page: JournalEntryPage) {
 }
 
 Hooks.on("renderJournalEntryPageSheet", (_app, html: HTMLElement, context) => {
+  const showButton = game.settings?.get(moduleId as any, "descriptiveTextButton");
   // Find all <section class="description"> blocks
-  const descriptions = html.querySelectorAll<HTMLElement>("section.description:not(.readout)");
+  if (showButton) {
+    const descriptions = html.querySelectorAll<HTMLElement>("section.description:not(.readout)");
 
-  descriptions.forEach((description: HTMLElement) => {
-    description.classList.add("readout");
+    descriptions.forEach((description: HTMLElement) => {
+      description.classList.add("readout");
 
-    const button = document.createElement("i");
-    button.className = "ph ph-chat-circle-text readoutbutton";
-    button.style.cursor = "pointer";
+      const button = document.createElement("i");
+      button.className = "ph ph-chat-circle-text readoutbutton";
+      button.style.cursor = "pointer";
 
-    const page = context.document as JournalEntryPage;
-    button.onclick = () => postDescToChat(description, page);
+      const page = context.document as JournalEntryPage;
+      button.onclick = () => postDescToChat(description, page);
 
-    description.prepend(button);
-  });
+      description.prepend(button);
+    });
+  }
 });

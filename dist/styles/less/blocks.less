@@ -287,13 +287,15 @@
 
             display: block;
             padding-right: 6rem;
-            border: 2px solid #7a0303;
             padding: 15px;
             span.dropcap{
                 font: 8rem "Gloucester Initialen", sans-serif;
                 float: left;
                 margin: -10px 5px -10px 0px;
                 color: @km-darkred;
+            }
+            &.bordered {
+                border: 2px solid #7a0303;
             }
             &.formal{
                 p {
@@ -489,6 +491,7 @@
             text-transform: uppercase;
             font-family: 'Good OT Cond Bold';
             max-height: 24px;
+            margin-bottom: 0.75rem;
             &.rarity {
                 background: @trait-rarity;
             }
